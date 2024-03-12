@@ -1,0 +1,111 @@
+
+.fakebody {
+    margin: 0px 10px;   
+}
+
+h1 {
+    font-family: "barlow";
+    font-size: 55px;
+}
+
+h2 {
+    font-family: "barlow";
+    font-size: 36px;
+}
+
+h3 {
+    font-family: "barlow";
+    font-size: 30px;
+}
+
+h4 {
+    font-family: "barlow";
+    font-size: 21px;
+}
+
+p {
+    font-family: "barlow";
+    font-size: 16px;
+}
+
+a :hover {
+    cursor: pointer;
+}
+
+
+.banner {
+    height: 416px;   
+    background-color: #657DBA;  
+    margin: auto;
+    margin-top: 70px;     
+}
+
+.bannertxt{
+    padding-top: 200px; 
+    padding-left: 10px;
+
+}
+
+.frivilligknap {
+    height: 50px;   
+    width: 220px;   
+    background-color: red;
+    border-radius: 10px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    margin-top: 5px;
+}
+
+
+
+.gørenforskel {
+    text-align: center;
+}
+
+.hvadfrivillig {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.illusektion {
+    margin-top: 10px;
+}
+
+.illukasser h4 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.illukasser p {
+    text-align: center;
+}
+
+
+.illu {
+    height: 320px;
+    max-width: 320px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+}
+
+.læsmereknap {
+    background-color: #569B78;
+    height: 55px;
+    max-width: 320px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;  
+}
+
+.formular-section {
+    
+}
