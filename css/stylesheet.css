@@ -18,7 +18,6 @@ h2 {
 h3 {
     font-family: "barlow";
     font-size: 30px;
-    margin-top: 1.5rem;
     text-align: center;
 }
 
@@ -39,7 +38,7 @@ a :hover {
 
 .banner {
     height: 416px;   
-    background-color: #657DBA;  
+    background-color: #4B676A;  
     margin: auto;
     margin-top: 70px;     
 }
@@ -50,9 +49,9 @@ a :hover {
 
 }
 
-.footer-content {
+footer {
     height: 416px;   
-    background-color: #657DBA;  
+    background-color: #4B676A;
     margin: auto;
     margin-top: 70px;   
     display: flex;
