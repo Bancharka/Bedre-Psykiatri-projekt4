@@ -71,6 +71,7 @@ a :hover {
 
 .illusektion {
     margin-top: 10px;
+    text-align: ;
 }
 
 .illukasser h4 {
@@ -108,4 +109,17 @@ a :hover {
 
 .formular-section {
     
+}
+
+@media (min-width: 786px) {
+    .illusektion {
+        display: flex;
+        flex-direction: row;        
+    }
+
+    .illukasser {
+        width: 800px;
+        height: auto;
+        max-width: 900px;
+    }
 }
