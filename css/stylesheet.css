@@ -37,6 +37,31 @@ a :hover {
     cursor: pointer;
 }
 
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+nav li a {
+    padding: 10px;
+    text-decoration: none;
+    color: #353535;
+    font-size: 16px;
+    font-family: "barlow"; 
+}
+
+
+
+
 .banner {
     height: 416px;   
     background-color: #4B676A;  
