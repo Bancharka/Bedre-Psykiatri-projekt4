@@ -38,10 +38,28 @@ a :hover {
     cursor: pointer;
 }
 
+
+header {
+    display: flex;
+    align-items: center;
+    padding-left:20px;
+    padding-right:20px;
+    margin-top: 5px;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    width: 250px; 
+    height: auto;
+    padding: 20px;
+}
+
 nav {
     display: flex;
     justify-content: flex-end;
-    margin-top: 20px;
 }
 
 nav ul {
@@ -51,13 +69,33 @@ nav ul {
     display: flex;
 }
 
-
 nav li a {
     padding: 10px;
     text-decoration: none;
     color: #353535;
     font-size: 16px;
     font-family: "barlow"; 
+}
+
+
+
+.button {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #c12d2d;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "barlow";
+    flex-shrink: 0;
+}
+
+.button:hover {
+    background-color: #6a1313;
+}
+
+.button-container {
+    margin-left: 20px;
 }
 
 
@@ -74,6 +112,31 @@ nav li a {
     padding-left: 10px;
 
 }
+
+
+
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    flex-direction: row; 
+    text-align: center;
+    align-items: center; 
+  }
+  
+  .navigation li {
+    margin-left: 1em;
+    padding: 0.3em;
+  }
+  
+  .navigation li a {
+    text-align: center;
+    text-decoration: none;
+  }
 
 
 .frivilligknap {
