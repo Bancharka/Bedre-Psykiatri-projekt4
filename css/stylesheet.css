@@ -61,7 +61,6 @@ nav li a {
 
 
 
-
 .banner {
     height: 416px;   
     background-color: #4B676A;  
@@ -86,27 +85,6 @@ footer {
     justify-content: center;   
 }
 
-.navigation ul {
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    flex-direction: row; 
-    text-align: center;
-    align-items: center; 
-  }
-  
-  .navigation li {
-    margin-left: 1em;
-    padding: 0.3em;
-  }
-  
-  .navigation li a {
-    text-align: center;
-    text-decoration: none;
-  }
 
 
 .frivilligknap {
