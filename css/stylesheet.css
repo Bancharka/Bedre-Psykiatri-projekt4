@@ -26,6 +26,7 @@ h4 {
     font-size: 26px;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
+    color: #ffffff;
 }
 
 p {
@@ -257,18 +258,6 @@ nav li a {
 
 }
 
-footer {
-    height: 416px;   
-    background-color: #4B676A;
-    margin: auto;
-    margin-top: 70px;   
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center;   
-}
-
-
 
 
 
@@ -306,7 +295,6 @@ footer {
     line-height: 30px;
     margin-top: 5px;
 }
-
 
 
 .gørenforskel {
@@ -363,6 +351,55 @@ footer {
     padding: 18px;  
 }
 
+
+footer {
+    height: auto;   
+    background-color: #4B676A;
+    margin: auto;
+    margin-top: 70px;     
+    font-family: "barlow";
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+}
+
+a, .hyperlink-footer {
+    color: #aad9d9;
+    font-size: 18px;
+  }
+
+ .hyperlink-footer:hover {
+    display: inline-block;
+    text-decoration: none; 
+    color: #FFB96E;
+    transition: 0.2s;
+  }
+
+.social-media-icons {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+.social-media-icons li {
+        display: inline-block;
+        margin-right: 10px; 
+        margin-bottom: 20px;
+    }
+    
+.social-media-icons img {
+        width: 40px; 
+        height: 40px;
+        border-radius: 50%; 
+    }
+
 .formular-section {
     
 }
@@ -380,7 +417,15 @@ footer {
     .illukasser {
         width: 800px;
         flex-direction: column;
-        justify-content: space-evenly;
         align-items: center;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .omtilrow {
+      padding: 0px 30px;
     }
 }
