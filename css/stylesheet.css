@@ -38,6 +38,8 @@ a :hover {
 }
 
 
+/* Navbar */
+
 header {
     display: flex;
     align-items: center;
@@ -96,6 +98,149 @@ nav li a {
 .button-container {
     margin-left: 20px;
 }
+
+/* Slideshow Head */
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  .mySlides img {
+    width: 100%;
+    height: 400px; 
+    object-fit: cover;
+}
+
+/* Gemmer billederne som udgangspunkt */
+.mySlides {
+    display:none;
+  }
+
+/* Knapper */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+.prev {
+    transform: translateY(-50%); /* Um die Höhe des Elements berücksichtigen */
+}
+
+.next {
+    transform: translateY(-50%); /* Um die Höhe des Elements berücksichtigen */
+}
+
+
+/* Sæt "next" knap til den højre side */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+/* hover effekt */
+.prev:hover, .next:hover {
+    background-color: #6a1313;
+  }
+
+/* Tekst til caption */
+.text {
+    font-size: 20px;
+    font-family: "barlow";
+    flex-shrink: 0;
+    color: #353535;
+    padding: 8px 12px;
+    position: relative;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+/* Cirkler under billederne */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+
+/* Tekst og button på billedet */
+
+  .centered-text {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    font-size: 50px;
+    font-family: "barlow";
+    color: #353535;
+    padding: 10px;
+    text-align: center;
+}
+.centered-text-2 {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    font-size: 50px;
+    font-family: "barlow";
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.btn {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    padding: 10px 20px;
+    background-color: #c12d2d;
+    font-size: 20px;
+    font-family: "barlow";
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #4a0a0a;
+}
+
+
+
+
 
 
 
