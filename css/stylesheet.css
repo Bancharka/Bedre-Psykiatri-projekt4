@@ -7,18 +7,21 @@ h1 {
     font-family: "barlow";
     font-size: 55px;
     margin-top: 2cm;
+    color: #353535;
 }
 
 h2 {
     font-family: "barlow";
     font-size: 36px;
     margin-top: 1.5rem;
+    color: #353535;
 }
 
 h3 {
     font-family: "barlow";
     font-size: 30px;
     text-align: center;
+    color: #353535;
 }
 
 h4 {
@@ -33,6 +36,7 @@ h4 {
 p {
     font-family: "barlow";
     font-size: 16px;
+    color: #353535;
 }
 
 a :hover {
@@ -123,6 +127,10 @@ nav li a {
     width: 100%;
     height: 400px; /* Wählen Sie die gewünschte Höhe für die Bilder im Slideshow-Container */
     object-fit: cover; /* Skalierung, um den gesamten Bereich zu füllen und die Seitenverhältnisse beizubehalten */
+}
+
+.dots {
+  margin-bottom: 2rem;
 }
 
 
@@ -240,9 +248,6 @@ nav li a {
 
 }
 
-
-
-
 .navigation ul {
     display: flex;
     flex-direction: column;
@@ -306,7 +311,6 @@ margin-left: 50px;
 z-index: 20;
 }
 
-
 #menu-title {
   font-family: 'Questrial', sans-serif;
   font-size: 40px;
@@ -330,11 +334,47 @@ z-index: 20;
     margin-top: 5px;
 }
 
-
+/* Om Bedre Psykiatri afsnit */
 .gørenforskel {
     text-align: center;
+    background-color: #F4F2EB;
     padding: 3rem;
 }
+
+.tekststykke {
+  font-size: 18px;
+  line-height: 200%;
+  margin-bottom: 3em;
+  margin-top: 3em;
+}
+
+.billede {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 3em;
+  margin-top: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.container-beige {
+  margin: 0 auto;
+  width: 100%; 
+  padding: 0 100px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  max-width: 1300px; 
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+}
+
+/* SLUT Om Bedre Psykiatri afsnit */
 
 .hvadfrivillig {
     text-align: center;
@@ -343,7 +383,8 @@ z-index: 20;
 
 .illusektion {
     margin-top: 10px;
-    text-align: ;
+    text-align: center;
+    padding: 3rem;
 }
 
 .illukasser {
@@ -373,7 +414,7 @@ z-index: 20;
 }
 
 .læsmereknap {
-    background-color: #569B78;
+    background-color: #4B676A;
     height: 55px;
     max-width: 320px;
     border-radius: 10px;
@@ -497,7 +538,7 @@ a, .hyperlink-footer {
 
   .skrift {
     text-align: center;
-    background-color: #569B78;
+    background-color: #4B676A;
     padding: 10px 16px;
     color: white;
     border-radius: 10px;
@@ -587,6 +628,18 @@ a, .hyperlink-footer {
     .containerBillede{
         max-width: 50%;
         margin-top: 20%;
+    }
+
+    .split { 
+      flex-direction: row;
+    }
+  
+      .split > * {
+      flex-basis: 100%;
+    }
+  
+    .split > * + * {
+      margin-left: 3em;
     }
 
 }
