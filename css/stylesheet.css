@@ -375,23 +375,29 @@ z-index: 20;
     padding: 18px;  
 }
 
+/* footer */
 
-footer {
-    height: auto;   
+.container-footer {
+    margin: 0 auto;
+    width: 100%; 
+    padding: 0 100px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    max-width: 1300px; 
     background-color: #4B676A;
-    margin: auto;
-    margin-top: 70px;     
     font-family: "barlow";
-    color: #ffffff;
     font-weight: bold;
 }
 
-.footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 50px;
+.ikon-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); 
+  justify-content: center;
+  max-width: 1200px;
+  padding: 2rem;
+  text-align: left;
+  gap: 2rem;
 }
 
 a, .hyperlink-footer {
@@ -525,6 +531,13 @@ a, .hyperlink-footer {
   }
 /* Billedegaleri SLUT*/
 
+@media (min-width:640px) {
+  .ikon-grid {
+    grid-template-columns: repeat(2, 1fr); 
+    max-width: 900px;
+  }
+}
+
 
 @media (max-width: 1000px) {
 
@@ -536,9 +549,18 @@ a, .hyperlink-footer {
     display: none;
   }
 }
+
   
 @media (min-width: 1001px) {
 
+  .ikon-grid {
+    grid-template-columns: repeat(4, 1fr); 
+    max-width: 1500px;
+  }
+
+  .ikon-item {
+    margin-right: 80px;
+  }
 
     .illusektion {
         display: flex;
@@ -553,9 +575,6 @@ a, .hyperlink-footer {
         align-items: center;
     }
 
-    .footer {
-        max-width: 1000px;
-    }
 
     .footer-content {
         display: flex;
@@ -571,4 +590,5 @@ a, .hyperlink-footer {
         max-width: 50%;
         margin-top: 20%;
     }
+
 }
