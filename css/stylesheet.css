@@ -376,6 +376,94 @@ a, .hyperlink-footer {
     
 }
 
+/* Billedegaleri START*/
+.containerBillede {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 50%;
+  }
+
+
+  .cursor {
+    cursor: pointer;
+  }
+  
+  .billedegalleri {
+    display: none;
+  }
+
+  .tidligere,
+  .næste {
+    cursor: pointer;
+    position: absolute;
+    top: 20%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  .næste {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+ 
+  .tidligere:hover,
+  .næste:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+
+  .nummertekst {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    font-family: "barlow";
+  }
+  
+
+  .skrift {
+    text-align: center;
+    background-color: #222;
+    padding: 10px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  .kolonne {
+    float: left;
+    width: 33.3%;
+    font-family: "barlow";
+    
+  }
+  
+
+  .demo {
+    opacity: 0.6;
+    margin-top: 5px;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+/* Billedegaleri SLUT*/
+
 
 
 @media (min-width: 786px) {
@@ -404,5 +492,10 @@ a, .hyperlink-footer {
 
     .omtilrow {
       padding: 0px 30px;
+    }
+
+    .containerBillede{
+        max-width: 50%;
+        margin-top: 20%;
     }
 }

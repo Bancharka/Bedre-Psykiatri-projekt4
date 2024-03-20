@@ -10,7 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="js/slideshow_header.js" defer></script>
+    <script src="js/billedegaleri.js" defer></script>
 </head>
+
 <body>
 
 <header>
@@ -118,6 +120,51 @@
 
 </div>
 
+<!-- Billedegaleri START -->
+
+<div class="containerBillede">
+
+    <!-- Billeder i hele brædten med nummertekst -->
+    <div class="billedegalleri">
+      <div class="nummertekst">1 / 3</div>
+        <img src="IMG/braespil.jpg" style="width:100%">
+    </div>
+  
+    <div class="billedegalleri">
+      <div class="nummertekst">2 / 3</div>
+        <img src="IMG/gaatur.JPG" style="width:100%">
+    </div>
+  
+    <div class="billedegalleri">
+      <div class="nummertekst">3 / 3</div>
+        <img src="IMG/foredrag2.jpeg" style="width:100%">
+    </div>
+  
+  
+    <!-- Tidligere og næste knap -->
+    <a class="tidligere" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="næste" onclick="plusSlides(1)">&#10095;</a>
+  
+    <!-- Billede tekst -->
+    <div class="skrift">
+      <p id="selveSkriften"></p>
+    </div>
+  
+    <!-- Billeder -->
+    <div class="række">
+        <div class="kolonne">
+            <img class="demo cursor" src="IMG/braespil.jpg" style="width:100%" onclick="currentSlide(1)" alt="Temacafe: En gang om måneden byder vi på kaffe og en snak med andre pårørende med udvalgt tema, som fx. Krea-tid, brætspil eller madlavning. Vi mødes i et trygt og fortroligt rum, hvor man kan dele sine sorger, glæder og udfordringer med andre unge pårørende i lignende situationer, og samtidig hygge sig med forskellige aktiviteter.">
+        </div>        
+      <div class="kolonne"> 
+        <img class="demo cursor" src="IMG/gaatur.JPG" style="width:100%" onclick="currentSlide(2)" alt="Gåtur: Som pårørende til en med en psykisk sygdom eller en udviklingsforstyrrelse er det vigtigt ind i mellem at få sig en pause fra krav og bekymringer og opleve, at man ikke er alene med sine udfordringer. På vores gåture får man dejlige naturoplevelser og også en mulighed for en snak og et fællesskab med de andre unge pårørende.">
+      </div>
+      <div class="kolonne">
+        <img class="demo cursor" src="IMG/foredrag2.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Fordrag: Bedre Psykiatri's lokalafdelinger arrangerer regelmæssigt foredrag om psykisk sygdom og livet som pårørende. Disse foredrag dækker en bred vifte af emner og involverer eksperter, der giver et dybtgående indblik og forståelse for situationen som pårørende til en psykisk syg.">
+      </div>
+    </div>
+  </div>
+
+<!-- Billedegaleri SLUT -->
 <footer>
     <div class="footer">
         <div class="footer-content">
