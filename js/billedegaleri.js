@@ -1,17 +1,17 @@
 let slideIndex2 = 1;
-showSlides(slideIndex2);
+showSlides2(slideIndex2);
 
 // Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex2 += n);
+function plusSlides2(n) {
+  showSlides2(slideIndex2 += n);
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex2 = n);
+  showSlides2(slideIndex2 = n);
 }
 
-function showSlides(n) {
+function showSlides2(n) {
   let i;
   let slides = document.getElementsByClassName("billedegalleri");
   let dots = document.getElementsByClassName("demo");
