@@ -27,6 +27,7 @@ h4 {
     margin-top: 1.5rem;
     margin-bottom: 1rem;
     color: #ffffff;
+    font-weight: bold;
 }
 
 p {
@@ -36,6 +37,15 @@ p {
 
 a :hover {
     cursor: pointer;
+}
+
+.overskrift {
+    color: white; /* Sæt tekstfarven til hvid */
+    text-shadow: 
+        -1px -1px 0 rgba(0, 0, 0, 0.5),  
+         1px -1px 0 rgba(0, 0, 0, 0.5),
+        -1px  1px 0 rgba(0, 0, 0, 0.5),
+         1px  1px 0 rgba(0, 0, 0, 0.5); /* Brug en semi-transparent sort farve */
 }
 
 
@@ -255,6 +265,58 @@ nav li a {
     text-decoration: none;
   }
 
+/*Burger Menu*/
+.sidenav {
+  height: 100%;
+  width: 0; 
+  position: fixed;
+  z-index: 1;
+  top: 0; 
+  right: 0; /* Ændret fra left: 0; */
+  background-color: #929393; 
+  overflow-x: hidden; 
+  padding-top: 60px;
+  transition: 0.5s; 
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Questrial', sans-serif;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #aad9d9;
+}
+
+.sidenav .closebtn {
+font-family: 'Questrial', sans-serif;
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+.closebtn {
+z-index: 20;
+}
+
+
+#menu-title {
+  font-family: 'Questrial', sans-serif;
+  font-size: 40px;
+  color: #13110e;
+  cursor: pointer;
+  line-height: 60px;
+  margin-left: 66px;
+}
+
+/* Slut Burger Menu*/
 
 .frivilligknap {
     height: 50px;   
@@ -323,34 +385,36 @@ nav li a {
     padding: 18px;  
 }
 
+/* footer */
 
-footer {
-    height: auto;   
+.container-footer {
+    margin: 0 auto;
+    width: 100%; 
+    padding: 0 100px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     background-color: #4B676A;
-    margin: auto;
-    margin-top: 70px;     
     font-family: "barlow";
-    color: #ffffff;
-    font-weight: bold;
 }
 
-.footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 50px;
+.ikon-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); 
+  justify-content: center;
+  padding: 2rem;
+  text-align: left;
+  gap: 2rem;
 }
 
 a, .hyperlink-footer {
-    color: #aad9d9;
+    color: #fefefe;
     font-size: 18px;
   }
 
  .hyperlink-footer:hover {
     display: inline-block;
-    text-decoration: none; 
-    color: #FFB96E;
+    text-decoration: underline; 
     transition: 0.2s;
   }
 
@@ -473,9 +537,40 @@ a, .hyperlink-footer {
   }
 /* Billedegaleri SLUT*/
 
+@media (min-width:640px) {
+  .ikon-grid {
+    grid-template-columns: repeat(2, 1fr); 
+    max-width: 900px;
+  }
+}
 
 
-@media (min-width: 786px) {
+@media (max-width: 1000px) {
+
+  .nav-menu {
+    display: none;
+  }
+
+  .button-container{
+    display: none;
+  }
+}
+
+  
+@media (min-width: 1001px) {
+ 
+.burger {
+  display: none;
+}
+
+  .ikon-grid {
+    grid-template-columns: repeat(4, 1fr); 
+  }
+
+  .ikon-item {
+    margin-right: 50px;
+  }
+
     .illusektion {
         display: flex;
         flex-direction: row;   
@@ -489,22 +584,9 @@ a, .hyperlink-footer {
         align-items: center;
     }
 
-    .footer {
-        max-width: 1000px;
-    }
-
-    .footer-content {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .omtilrow {
-      padding: 0px 30px;
-    }
-
     .containerBillede{
         max-width: 50%;
         margin-top: 20%;
     }
+
 }
