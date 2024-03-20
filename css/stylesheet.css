@@ -39,6 +39,15 @@ a :hover {
     cursor: pointer;
 }
 
+.overskrift {
+    color: white; /* Sæt tekstfarven til hvid */
+    text-shadow: 
+        -1px -1px 0 rgba(0, 0, 0, 0.5),  
+         1px -1px 0 rgba(0, 0, 0, 0.5),
+        -1px  1px 0 rgba(0, 0, 0, 0.5),
+         1px  1px 0 rgba(0, 0, 0, 0.5); /* Brug en semi-transparent sort farve */
+}
+
 
 /* Navbar */
 
@@ -263,7 +272,7 @@ nav li a {
   position: fixed;
   z-index: 1;
   top: 0; 
-  left: 0;
+  right: 0; /* Ændret fra left: 0; */
   background-color: #929393; 
   overflow-x: hidden; 
   padding-top: 60px;
@@ -301,29 +310,10 @@ z-index: 20;
 #menu-title {
   font-family: 'Questrial', sans-serif;
   font-size: 40px;
-  color: #7b746b;
+  color: #13110e;
   cursor: pointer;
-  line-height: 50px;
+  line-height: 60px;
   margin-left: 66px;
-}
-
-.button2 {
-  padding: 10px 20px;
-  text-decoration: none;
-  color: white;
-  background-color: #c12d2d;
-  border-radius: 8px;
-  font-size: 16px;
-  font-family: "barlow";
-  flex-shrink: 0;
-}
-
-.button2:hover {
-  background-color: #6a1313;
-}
-
-.button-container2 {
-  position: sticky;
 }
 
 /* Slut Burger Menu*/
