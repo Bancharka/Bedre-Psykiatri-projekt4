@@ -450,7 +450,7 @@ a, .hyperlink-footer {
   .næste {
     cursor: pointer;
     position: absolute;
-    top: 20%;
+    top: 30%;
     width: auto;
     padding: 16px;
     color: white;
@@ -469,13 +469,13 @@ a, .hyperlink-footer {
  
   .tidligere:hover,
   .næste:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #c12d2d;
   }
   
 
   .nummertekst {
     color: #f2f2f2;
-    font-size: 12px;
+    font-size: 18px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
@@ -485,9 +485,10 @@ a, .hyperlink-footer {
 
   .skrift {
     text-align: center;
-    background-color: #222;
+    background-color: #569B78;
     padding: 10px 16px;
     color: white;
+    border-radius: 10px;
   }
   
   .row:after {
@@ -513,6 +514,14 @@ a, .hyperlink-footer {
   .active,
   .demo:hover {
     opacity: 1;
+  }
+
+  .kolonne img {
+    border-radius: 10px; 
+  }
+
+  .enkelt-billede{
+    border-radius: 10px; 
   }
 /* Billedegaleri SLUT*/
 
