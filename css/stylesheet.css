@@ -27,6 +27,7 @@ h4 {
     margin-top: 1.5rem;
     margin-bottom: 1rem;
     color: #ffffff;
+    font-weight: bold;
 }
 
 p {
@@ -306,6 +307,25 @@ z-index: 20;
   margin-left: 66px;
 }
 
+.button2 {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #c12d2d;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: "barlow";
+  flex-shrink: 0;
+}
+
+.button2:hover {
+  background-color: #6a1313;
+}
+
+.button-container2 {
+  position: sticky;
+}
+
 /* Slut Burger Menu*/
 
 .frivilligknap {
@@ -383,32 +403,28 @@ z-index: 20;
     padding: 0 100px;
     display: flex; 
     justify-content: center; 
-    align-items: center;
-    max-width: 1300px; 
+    align-items: center; 
     background-color: #4B676A;
     font-family: "barlow";
-    font-weight: bold;
 }
 
 .ikon-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr); 
   justify-content: center;
-  max-width: 1200px;
   padding: 2rem;
   text-align: left;
   gap: 2rem;
 }
 
 a, .hyperlink-footer {
-    color: #aad9d9;
+    color: #fefefe;
     font-size: 18px;
   }
 
  .hyperlink-footer:hover {
     display: inline-block;
-    text-decoration: none; 
-    color: #FFB96E;
+    text-decoration: underline; 
     transition: 0.2s;
   }
 
@@ -552,14 +568,17 @@ a, .hyperlink-footer {
 
   
 @media (min-width: 1001px) {
+ 
+.burger {
+  display: none;
+}
 
   .ikon-grid {
     grid-template-columns: repeat(4, 1fr); 
-    max-width: 1500px;
   }
 
   .ikon-item {
-    margin-right: 80px;
+    margin-right: 50px;
   }
 
     .illusektion {
@@ -573,17 +592,6 @@ a, .hyperlink-footer {
         width: 800px;
         flex-direction: column;
         align-items: center;
-    }
-
-
-    .footer-content {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .omtilrow {
-      padding: 0px 30px;
     }
 
     .containerBillede{
