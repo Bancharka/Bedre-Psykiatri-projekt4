@@ -11,30 +11,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="js/slideshow_header.js" defer></script>
     <script src="js/billedegaleri.js" defer></script>
+    <script src="js/burgermenu.js" defer></script>
 </head>
 
 <body>
 
-<header>
-    <div class="logo">
-        <a href="https://bedrepsykiatri.dk">
-            <img src="IMG/bp_logo.png" alt="Logo Bedre Psykiatri">
-        </a>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="https://bedrepsykiatri.dk/hjaelp/">Få hjælp</a></li>
-            <li><a href="https://bedrepsykiatri.dk/viden/">Videnscenter</a></li>
-            <li><a href="https://bedrepsykiatri.dk/om/">Om os</a></li>
-            <li><a href="#">Bliv frivillig</a></li>
-            <li><a href="https://bedrepsykiatri.dk/pressepolitik/">Presse og politik</a></li>
-        </ul>
-    </nav>
-    <div class="button-container">
-        <a href="https://bedrepsykiatri.dk/stoet/" class="button">Støt os</a>
-    </div>
+    <header>
+        <div class="logo">
+            <a href="https://bedrepsykiatri.dk">
+                <img src="IMG/bp_logo.png" alt="Logo Bedre Psykiatri">
+            </a>
+        </div>
+        <nav>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <!-- Links bliver genereret til menuoptionerne -->
+                </div>
+              
+                <span id="menu-title" onclick="openNav()">&#9776;</span> 
+          </nav>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="https://bedrepsykiatri.dk/hjaelp/">Få hjælp</a></li>
+                <li><a href="https://bedrepsykiatri.dk/viden/">Videnscenter</a></li>
+                <li><a href="https://bedrepsykiatri.dk/om/">Om os</a></li>
+                <li><a href="#">Bliv frivillig</a></li>
+                <li><a href="https://bedrepsykiatri.dk/pressepolitik/">Presse og politik</a></li>
+            </ul>
+        </nav>
 
-</header>
+        <div class="button-container">
+            <a href="https://bedrepsykiatri.dk/stoet/" class="button">Støt os</a>
+        </div>
+    </header>
+      
+
 
  <!--Container til min Slideshow-->
     <div class="slideshow-container">

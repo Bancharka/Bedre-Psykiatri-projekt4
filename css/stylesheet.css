@@ -255,6 +255,58 @@ nav li a {
     text-decoration: none;
   }
 
+/*Burger Menu*/
+.sidenav {
+  height: 100%;
+  width: 0; 
+  position: fixed;
+  z-index: 1;
+  top: 0; 
+  left: 0;
+  background-color: #929393; 
+  overflow-x: hidden; 
+  padding-top: 60px;
+  transition: 0.5s; 
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Questrial', sans-serif;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #aad9d9;
+}
+
+.sidenav .closebtn {
+font-family: 'Questrial', sans-serif;
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+.closebtn {
+z-index: 20;
+}
+
+
+#menu-title {
+  font-family: 'Questrial', sans-serif;
+  font-size: 40px;
+  color: #7b746b;
+  cursor: pointer;
+  line-height: 50px;
+  margin-left: 66px;
+}
+
+/* Slut Burger Menu*/
 
 .frivilligknap {
     height: 50px;   
@@ -465,8 +517,20 @@ a, .hyperlink-footer {
 /* Billedegaleri SLUT*/
 
 
+@media (max-width: 1000px) {
 
-@media (min-width: 786px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .button-container{
+    display: none;
+  }
+}
+  
+@media (min-width: 1001px) {
+
+
     .illusektion {
         display: flex;
         flex-direction: row;   
