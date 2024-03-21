@@ -93,7 +93,6 @@ nav li a {
 }
 
 
-
 .button {
     padding: 10px 20px;
     text-decoration: none;
@@ -241,9 +240,13 @@ nav li a {
 }
 
 .bannertxt{
-    padding-top: 200px; 
+    padding-top: 50px; 
     padding-left: 10px;
-
+    text-shadow: 
+    -1px -1px 0 rgba(0, 0, 0, 0.5),  
+     1px -1px 0 rgba(0, 0, 0, 0.5),
+    -1px  1px 0 rgba(0, 0, 0, 0.5),
+     1px  1px 0 rgba(0, 0, 0, 0.5); 
 }
 
 .navigation ul {
@@ -379,6 +382,9 @@ z-index: 20;
     margin-top: 60px;
 }
 
+
+/* Illustration afsnit */
+
 .illusektion {
     margin-top: 10px;
     text-align: center;
@@ -391,25 +397,24 @@ z-index: 20;
     align-items: center;
 }
 
-.illukasser h4 {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.illukasser p {
-    text-align: center;
+.oneliner {
+  margin-top: 15px;
+  padding: 0px 80px;
+  font-weight: 450;
 }
 
 
 .illu {
-    height: 320px;
-    max-width: 320px;
+    height: 300px;
+    max-width: auto;
     background-color: orange;
     display: flex;
     justify-content: center;
     align-items: center;
     color: grey;
+    margin-top: 25px;
 }
+
 
 .læsmereknap {
     background-color: #4B676A;
