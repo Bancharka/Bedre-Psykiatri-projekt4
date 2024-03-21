@@ -8,6 +8,7 @@ h1 {
     font-size: 55px;
     margin-top: 1.5rem;
     color: #353535;
+    text-align: center;
 }
 
 h2 {
@@ -15,6 +16,7 @@ h2 {
     font-size: 36px;
     margin-top: 1.5rem;
     color: #353535;
+    text-align: center;
 }
 
 h3 {
@@ -28,7 +30,6 @@ h4 {
     font-family: "barlow";
     font-size: 26px;
     margin-top: 1.5rem;
-    margin-bottom: 1rem;
     color: #ffffff;
     font-weight: bold;
 }
@@ -332,6 +333,10 @@ z-index: 20;
     margin-top: 5px;
 }
 
+.dots {
+  margin-bottom: 1rem;
+}
+
 /* Om Bedre Psykiatri afsnit */
 .gørenforskel {
     text-align: center;
@@ -348,8 +353,8 @@ z-index: 20;
 
 .billede {
   display: block;
-  width: auto;
-  height: 500px;
+  width: 500px;
+  height: auto;
   margin-bottom: 2em;
   margin-top: 3em;
   margin-left: auto;
@@ -357,7 +362,7 @@ z-index: 20;
   border-radius: 10px;
 }
 
-.container-beige {
+.container-orange {
   margin: 0 auto;
   width: 100%; 
   padding: 0 50px;
@@ -365,6 +370,11 @@ z-index: 20;
   justify-content: center; 
   align-items: center;
   max-width: 1300px; 
+}
+
+.bold {
+  font-weight: 500;
+  font-style: italic;
 }
 
 .split {
@@ -409,11 +419,15 @@ z-index: 20;
 
 /* Illustration afsnit */
 
+.orange {
+  background-color: #e27b309e;
+  padding: 1rem 0;
+}
+
 .illusektion {
     margin-top: 10px;
     text-align: center;
     padding: 3rem;
-    background-color: #e27b309e;
 }
 
 .illukasser {
@@ -432,12 +446,15 @@ z-index: 20;
 .illu {
     height: 300px;
     max-width: auto;
-    background-color: orange;
     display: flex;
     justify-content: center;
     align-items: center;
     color: grey;
     margin-top: 25px;
+}
+
+.louise {
+  text-align: center;
 }
 
 
