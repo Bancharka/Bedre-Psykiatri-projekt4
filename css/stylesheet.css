@@ -6,7 +6,7 @@
 h1 {
     font-family: "barlow";
     font-size: 55px;
-    margin-top: 2cm;
+    margin-top: 1.5rem;
     color: #353535;
 }
 
@@ -127,9 +127,6 @@ nav li a {
     object-fit: cover; /* Skalierung, um den gesamten Bereich zu füllen und die Seitenverhältnisse beizubehalten */
 }
 
-.dots {
-  margin-bottom: 2rem;
-}
 
 /* Gemmer billederne som udgangspunkt */
 .mySlides {
@@ -338,22 +335,22 @@ z-index: 20;
 /* Om Bedre Psykiatri afsnit */
 .gørenforskel {
     text-align: center;
-    background-color: #F4F2EB;
     padding: 3rem;
 }
 
 .tekststykke {
-  font-size: 18px;
+  color: #353535;
   line-height: 200%;
   margin-bottom: 3em;
   margin-top: 3em;
+  font-weight: 400;
 }
 
 .billede {
   display: block;
-  width: 100%;
-  height: auto;
-  margin-bottom: 3em;
+  width: auto;
+  height: 500px;
+  margin-bottom: 2em;
   margin-top: 3em;
   margin-left: auto;
   margin-right: auto;
@@ -363,7 +360,7 @@ z-index: 20;
 .container-beige {
   margin: 0 auto;
   width: 100%; 
-  padding: 0 100px;
+  padding: 0 50px;
   display: flex; 
   justify-content: center; 
   align-items: center;
@@ -375,11 +372,38 @@ z-index: 20;
   flex-direction: column;
 }
 
+
+.knap {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #c12d2d;
+  border-radius: 8px;
+  font-family: "barlow";
+  flex-shrink: 0;
+}
+
+.knap:hover {
+  background-color: #6a1313;
+}
+
+.knap-container {
+  margin-left: 20px;
+}
+
+.knap-position {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-end; 
+  padding: 1em;
+  }
+
 /* SLUT Om Bedre Psykiatri afsnit */
 
 .hvadfrivillig {
     text-align: center;
     margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 
@@ -389,6 +413,7 @@ z-index: 20;
     margin-top: 10px;
     text-align: center;
     padding: 3rem;
+    background-color: #e27b309e;
 }
 
 .illukasser {
