@@ -79,6 +79,7 @@ header {
 nav {
     display: flex;
     justify-content: flex-end;
+    cursor: pointer;
 }
 
 nav ul {
@@ -96,6 +97,11 @@ nav li a {
     font-family: "barlow"; 
 }
 
+.underline {
+  text-decoration: underline #c12d2d;
+  
+
+}
 
 .button {
     padding: 10px 20px;
@@ -110,6 +116,7 @@ nav li a {
 
 .button:hover {
     background-color: #6a1313;
+    cursor: pointer;
 }
 
 .button-container {
@@ -288,7 +295,7 @@ nav li a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  font-family: 'Questrial', sans-serif;
+  font-family: "barlow";
   color: #ffffff;
   display: block;
   transition: 0.3s;
@@ -299,7 +306,7 @@ nav li a {
 }
 
 .sidenav .closebtn {
-font-family: 'Questrial', sans-serif;
+font-family: "barlow";
 position: absolute;
 top: 0;
 right: 25px;
@@ -342,12 +349,17 @@ z-index: 20;
 .gørenforskel {
   text-align: center;
   padding: 3rem;
-  background-color: #e27b309e;
+  background-color: rgb(146, 192, 202, 0.8);     
   padding-bottom: 80px;
+  
+}
+
+.gørenforskel h1 {
+  color: white;
 }
 
 .tekststykke {
-  color: #353535;
+  color: white;
   line-height: 200%;
   margin-bottom: 3em;
   margin-top: 3em;
@@ -502,24 +514,25 @@ strong {
 a, .hyperlink-footer {
     color: #fefefe;
     font-size: 18px;
+    
   }
 
  .hyperlink-footer:hover {
     display: inline-block;
     text-decoration: underline; 
     transition: 0.2s;
+    cursor: pointer;
   }
 
 .social-media-icons {
         list-style: none;
-        padding: 0;
+        padding-left: 15px;
         margin: 0;
     }
     
 .social-media-icons li {
         display: inline-block;
-        margin-right: 10px; 
-        margin-bottom: 20px;
+        
     }
     
 .social-media-icons img {
@@ -531,6 +544,105 @@ a, .hyperlink-footer {
 .formular-section {
     
 }
+
+/* Kontaktformular start */ 
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: beige;
+  height: 600px;
+  
+}
+
+.contact h2 {
+  color: black;
+
+}
+
+
+.contact form {
+  width: 600px;
+  text-align: center;
+
+}
+
+form .input-box {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.input-box .input-field {
+  width: 48.5%;
+}
+
+.field .item {
+  width: 100%;
+  padding: 18px;
+  background: transparent;
+  border: 2px solid #0ef;
+  outline: none;
+  border-radius: 6px;
+  font-size: 16px;
+  color: black;
+  margin: 12px 0;
+
+
+}
+
+.field.error .item {
+  border-color: red;
+}
+
+.field .item:placeholder {
+  color: rgba(255, 255, 255, .3);
+}
+
+.field .error-txt {
+  font-size: 14px;
+  color: #d93025;
+  text-align: left;
+  margin: -5px 0 10px;
+  display: none;
+}
+
+.field.error .error-txt {
+  display: block;
+}
+
+form .textarea-field .item {
+  resize: none;
+
+}
+
+form .textarea-field .error-txt {
+  margin-top: -10px;
+
+}
+
+form button {
+  padding: 12px 32px;
+  background: #0ef;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #0ef;
+  font-size: 16px;
+  color: #333;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: .5s;
+  
+}
+
+form button:hover {
+  box-shadow: none;
+}
+
+/* Kontaktformular slut*/ 
 
 /* Billedegaleri START*/
 .containerBillede {
