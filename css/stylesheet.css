@@ -9,6 +9,7 @@ h1 {
     margin-top: 1.5rem;
     color: #353535;
     text-align: center;
+    font-weight: 600;
 }
 
 h2 {
@@ -17,6 +18,7 @@ h2 {
     margin-top: 1.5rem;
     color: #353535;
     text-align: center;
+    font-weight: 500;
 }
 
 h3 {
@@ -24,6 +26,7 @@ h3 {
     font-size: 30px;
     text-align: center;
     color: #353535;
+    font-weight: 500;
 }
 
 h4 {
@@ -44,7 +47,7 @@ a :hover {
 }
 
 .overskrift {
-    color: white; /* Sæt tekstfarven til hvid */
+    color: white; 
     text-shadow: 
         -1px -1px 0 rgba(0, 0, 0, 0.5),  
          1px -1px 0 rgba(0, 0, 0, 0.5),
@@ -115,7 +118,6 @@ nav li a {
 
 /* Slideshow Head */
 
-/* Slideshow container */
 .slideshow-container {
     max-width: 100%;
     position: relative;
@@ -176,6 +178,7 @@ nav li a {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    margin-bottom: 1rem;
   }
 
   .active, .dot:hover {
@@ -193,7 +196,7 @@ nav li a {
     to {opacity: 1}
   }
 
-
+/* Banner knapper */
 
   .overlay {
     position: absolute;
@@ -226,8 +229,6 @@ nav li a {
 .overlay a button:hover {
         background-color: #6a1313;
 }
-
-
 
 
 .banner {
@@ -339,8 +340,10 @@ z-index: 20;
 
 /* Om Bedre Psykiatri afsnit */
 .gørenforskel {
-    text-align: center;
-    padding: 3rem;
+  text-align: center;
+  padding: 3rem;
+  background-color: #e27b309e;
+  padding-bottom: 80px;
 }
 
 .tekststykke {
@@ -348,7 +351,11 @@ z-index: 20;
   line-height: 200%;
   margin-bottom: 3em;
   margin-top: 3em;
-  font-weight: 400;
+  font-weight: 300;
+}
+
+strong {
+  font-weight: 600;
 }
 
 .billede {
@@ -362,7 +369,7 @@ z-index: 20;
   border-radius: 10px;
 }
 
-.container-orange {
+.container-frivillig {
   margin: 0 auto;
   width: 100%; 
   padding: 0 50px;
@@ -372,11 +379,6 @@ z-index: 20;
   max-width: 1300px; 
 }
 
-.bold {
-  font-weight: 500;
-  font-style: italic;
-}
-
 .split {
   display: flex;
   flex-direction: column;
@@ -384,13 +386,13 @@ z-index: 20;
 
 
 .knap {
-  padding: 10px 20px;
+  padding: 20px 30px;
   text-decoration: none;
   color: white;
   background-color: #c12d2d;
   border-radius: 8px;
   font-family: "barlow";
-  flex-shrink: 0;
+  font-size: larger;
 }
 
 .knap:hover {
@@ -408,7 +410,13 @@ z-index: 20;
   padding: 1em;
   }
 
-/* SLUT Om Bedre Psykiatri afsnit */
+/* Illustrationer afsnit */
+
+.friviilig {
+  text-align: center;
+  padding: 3rem;
+  padding-bottom: 80px;
+}
 
 .hvadfrivillig {
     text-align: center;
@@ -416,16 +424,7 @@ z-index: 20;
     margin-bottom: 60px;
 }
 
-
-/* Illustration afsnit */
-
-.orange {
-  background-color: #e27b309e;
-  padding: 1rem 0;
-}
-
 .illusektion {
-    margin-top: 10px;
     text-align: center;
     padding: 3rem;
 }
@@ -469,6 +468,13 @@ z-index: 20;
     align-items: center;
     justify-content: center;
     padding: 18px;  
+}
+
+
+.billedramme {
+  text-align: center;
+  padding: 3rem;
+  padding-bottom: 80px;
 }
 
 /* footer */
