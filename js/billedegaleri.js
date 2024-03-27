@@ -1,14 +1,14 @@
-let slideIndex2 = 1;
-showSlides2(slideIndex2);
+let billedeSerie = 1;
+showSlides2(billedeSerie);
 
-// Next/previous controls
+
 function plusSlides2(n) {
-  showSlides2(slideIndex2 += n);
+  showSlides2(billedeSerie += n);
 }
 
-// Thumbnail image controls
+
 function currentSlide(n) {
-  showSlides2(slideIndex2 = n);
+  showSlides2(billedeSerie = n);
 }
 
 function showSlides2(n) {
@@ -16,16 +16,16 @@ function showSlides2(n) {
   let slides = document.getElementsByClassName("billedegalleri");
   let dots = document.getElementsByClassName("demo");
   let captionText = document.getElementById("selveSkriften");
-  if (n > slides.length) {slideIndex2 = 1}
-  if (n < 1) {slideIndex2 = slides.length}
+  if (n > slides.length) {billedeSerie = 1}
+  if (n < 1) {billedeSerie = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex2-1].style.display = "block";
-  dots[slideIndex2-1].className += " active";
-  captionText.innerHTML = dots[slideIndex2-1].alt;
+  slides[billedeSerie-1].style.display = "block";
+  dots[billedeSerie-1].className += " active";
+  captionText.innerHTML = dots[billedeSerie-1].alt;
 }
 

@@ -666,6 +666,7 @@ form button:hover {
   .næste {
     cursor: pointer;
     position: absolute;
+    display: flex;
     top: 30%;
     width: auto;
     padding: 16px;
@@ -673,10 +674,10 @@ form button:hover {
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
-    user-select: none;
     -webkit-user-select: none;
   }
-  
+
+
   .næste {
     right: 0;
     border-radius: 3px 0 0 3px;
