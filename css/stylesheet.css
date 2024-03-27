@@ -483,12 +483,6 @@ strong {
 }
 
 
-.billedramme {
-  text-align: center;
-  padding: 3rem;
-  padding-bottom: 80px;
-}
-
 /* footer */
 
 .container-footer {
@@ -702,9 +696,9 @@ form button:hover {
 
   .skrift {
     text-align: center;
-    background-color: #4B676A;
+    background-color:rgb(146, 192, 202);
     padding: 10px 16px;
-    color: white;
+    color: rgb(255, 255, 255);
     border-radius: 10px;
   }
   
@@ -788,8 +782,8 @@ form button:hover {
     }
 
     .containerBillede{
-        max-width: 50%;
-        margin-top: 20%;
+        max-width: 80%;
+        margin-top: 30%;
     }
 
     .split { 
