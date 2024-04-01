@@ -319,12 +319,21 @@ z-index: 20;
 }
 
 #menu-title {
-  font-family: 'Questrial', sans-serif;
+  font-family: 'barlow';
   font-size: 40px;
   color: #13110e;
   cursor: pointer;
   line-height: 60px;
   margin-left: 66px;
+}
+
+#mySidenav a:last-child {
+  color: #c12d2d;
+  font-weight: 600;
+}
+
+#mySidenav a:last-child:hover {
+  color: #aad9d9;
 }
 
 /* Slut Burger Menu*/

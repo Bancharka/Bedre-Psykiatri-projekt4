@@ -1,9 +1,10 @@
 let menuOptions = [
     { title: "Få hjælp", url: "https://bedrepsykiatri.dk/hjaelp/"},
-    { title: "Videnscenter", href: "https://bedrepsykiatri.dk/viden/"},
+    { title: "Videncenter", href: "https://bedrepsykiatri.dk/viden/"},
     { title: "Om os", url: "https://bedrepsykiatri.dk/om/"},
-    { title: "Bliv frivillig", url: "#" },
+    { title: "Bliv friviilig", url: "#" },
     { title: "Presse og politik", url:"https://bedrepsykiatri.dk/pressepolitik/"},
+    { title: "Støt os", url:"https://bedrepsykiatri.dk/stoet/"},
   ];
   
   function openNav() {
