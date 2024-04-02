@@ -19,7 +19,6 @@ h2 {
     color: #353535;
     text-align: center;
     font-weight: 500;
-    max-width: 100px;
 }
 
 h3 {
@@ -43,7 +42,7 @@ p {
     font-size: 16px;
 }
 
-a :hover {
+a:hover {
     cursor: pointer;
 }
 
@@ -99,25 +98,22 @@ nav li a {
 }
 
 .underline {
-  text-decoration: underline #c12d2d;
-  
-
+  text-decoration: underline, #c12d2d;
 }
 
 .button {
     padding: 10px 20px;
     text-decoration: none;
     color: white;
-    background-color: #ff3030;
+    background-color: #c12d2d;
     border-radius: 8px;
     font-size: 16px;
     font-family: "barlow";
     flex-shrink: 0;
-    transition: 0.3s;    
 }
 
 .button:hover {
-    background-color: #c82323;
+    background-color: #6a1313;
     cursor: pointer;
 }
 
@@ -225,7 +221,7 @@ nav li a {
     }
 
 .overlay a button {
-        background-color: #ff3030;
+        background-color: #c12d2d;
         color: white;
         font-family: "barlow";
         font-size: 25px;
@@ -236,7 +232,7 @@ nav li a {
     }
 
 .overlay a button:hover {
-        background-color: #c82323;  
+        background-color: #6a1313;
 }
 
 
@@ -566,13 +562,13 @@ a, .hyperlink-footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #B2BEDD;
+  background-color: beige;
   height: 600px;
   
 }
 
 .contact h2 {
-  color: white;
+  color: black;
 
 }
 
@@ -596,8 +592,8 @@ form .input-box {
 .field .item {
   width: 100%;
   padding: 18px;
-  background: white;
-  border: 2px solid #949494;
+  background: transparent;
+  border: 2px solid #0ef;
   outline: none;
   border-radius: 6px;
   font-size: 16px;
@@ -639,11 +635,11 @@ form .textarea-field .error-txt {
 
 form button {
   padding: 12px 32px;
-  background: #ff3030;   
+  background: #0ef;
   border: none;
   outline: none;
   border-radius: 6px;
-  box-shadow: 0 0 10px #f04a4a;
+  box-shadow: 0 0 10px #0ef;
   font-size: 16px;
   color: #333;
   letter-spacing: 1px;
