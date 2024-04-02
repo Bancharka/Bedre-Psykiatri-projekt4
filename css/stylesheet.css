@@ -390,6 +390,17 @@ strong {
   border-radius: 10px;
 }
 
+.billedetale  {
+display: block;
+width: 330;
+height: auto;
+margin-bottom: 2em;
+margin-top: 3em;
+margin-left: auto;
+margin-right: auto;
+border-radius: 10px;
+}
+
 .container-frivillig {
   margin: 0 auto;
   width: 100%; 
