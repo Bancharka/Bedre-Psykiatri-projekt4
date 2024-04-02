@@ -107,15 +107,16 @@ nav li a {
     padding: 10px 20px;
     text-decoration: none;
     color: white;
-    background-color: #c12d2d;
+    background-color: #ff3030;
     border-radius: 8px;
     font-size: 16px;
     font-family: "barlow";
     flex-shrink: 0;
+    transition: 0.3s;    
 }
 
 .button:hover {
-    background-color: #6a1313;
+    background-color: #c82323;
     cursor: pointer;
 }
 
@@ -223,7 +224,7 @@ nav li a {
     }
 
 .overlay a button {
-        background-color: #c12d2d;
+        background-color: #ff3030;
         color: white;
         font-family: "barlow";
         font-size: 25px;
@@ -234,7 +235,7 @@ nav li a {
     }
 
 .overlay a button:hover {
-        background-color: #6a1313;
+        background-color: #c82323;  
 }
 
 
@@ -564,13 +565,13 @@ a, .hyperlink-footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: beige;
+  background-color: #B2BEDD;
   height: 600px;
   
 }
 
 .contact h2 {
-  color: black;
+  color: white;
 
 }
 
@@ -594,8 +595,8 @@ form .input-box {
 .field .item {
   width: 100%;
   padding: 18px;
-  background: transparent;
-  border: 2px solid #0ef;
+  background: white;
+  border: 2px solid #949494;
   outline: none;
   border-radius: 6px;
   font-size: 16px;
@@ -637,11 +638,11 @@ form .textarea-field .error-txt {
 
 form button {
   padding: 12px 32px;
-  background: #0ef;
+  background: #ff3030;   
   border: none;
   outline: none;
   border-radius: 6px;
-  box-shadow: 0 0 10px #0ef;
+  box-shadow: 0 0 10px #f04a4a;
   font-size: 16px;
   color: #333;
   letter-spacing: 1px;
