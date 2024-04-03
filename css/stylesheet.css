@@ -493,15 +493,14 @@ border-radius: 10px;
 
 .læsmereknap {
     background-color: #4B676A;
-    height: 55px;
+    height: 40px;
+    width: 200px;
     max-width: 320px;
     border-radius: 10px;
     margin-top: 20px;
     margin-bottom: 90px;
     display: block;
-    align-items: center;
-    justify-content: center;
-    padding: 18px;  
+    padding: 10px;
 }
 
 
