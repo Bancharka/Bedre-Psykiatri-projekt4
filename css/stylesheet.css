@@ -97,23 +97,26 @@ nav li a {
     font-family: "barlow"; 
 }
 
+
+
 .underline {
-  text-decoration: underline, #c12d2d;
+  text-decoration: underline, red;
 }
 
 .button {
     padding: 10px 20px;
     text-decoration: none;
     color: white;
-    background-color: #c12d2d;
+    background-color: #ff2c2c;
     border-radius: 8px;
     font-size: 16px;
     font-family: "barlow";
     flex-shrink: 0;
+    transition: 0.3s;
 }
 
 .button:hover {
-    background-color: #6a1313;
+    background-color: #b61f1f;
     cursor: pointer;
 }
 
@@ -221,7 +224,7 @@ nav li a {
     }
 
 .overlay a button {
-        background-color: #c12d2d;
+        background-color: #ff2c2c;
         color: white;
         font-family: "barlow";
         font-size: 25px;
@@ -232,7 +235,7 @@ nav li a {
     }
 
 .overlay a button:hover {
-        background-color: #6a1313;
+        background-color: #b61f1f;
 }
 
 
@@ -635,11 +638,10 @@ form .textarea-field .error-txt {
 
 form button {
   padding: 12px 32px;
-  background: #0ef;
+  background: red;
   border: none;
   outline: none;
   border-radius: 6px;
-  box-shadow: 0 0 10px #0ef;
   font-size: 16px;
   color: #333;
   letter-spacing: 1px;
