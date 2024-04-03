@@ -100,7 +100,8 @@ nav li a {
 
 
 .underline {
-  text-decoration: underline, red;
+  text-decoration: underline red;
+  
 }
 
 .button {
@@ -565,13 +566,13 @@ a, .hyperlink-footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: beige;
+  background-color: rgb(146, 192, 202, 0.8) ;
   height: 600px;
   
 }
 
 .contact h2 {
-  color: black;
+  color: white;
 
 }
 
