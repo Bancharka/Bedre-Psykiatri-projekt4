@@ -577,9 +577,9 @@ a, .hyperlink-footer {
 
 
 .contact form {
-  width: 600px;
+  padding: 0 20px 0 20px;
   text-align: center;
-
+  
 }
 
 form .input-box {
@@ -596,7 +596,8 @@ form .input-box {
   width: 100%;
   padding: 18px;
   background: white;
-  outline: none;  
+  outline: none; 
+  border: solid rgb(146, 192, 202, 0.8) ;
   border-radius: 10px;    
   font-size: 16px;
   color: black;
@@ -619,6 +620,7 @@ form .input-box {
   text-align: left;
   margin: -5px 0 10px;
   display: none;
+  font-family: "barlow";
 }
 
 .field.error .error-txt {
