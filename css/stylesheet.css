@@ -383,24 +383,17 @@ strong {
 
 .billede {
   display: block;
-  width: 500px;
-  height: auto;
+  width: 300px; 
+  height: auto; 
   margin-bottom: 2em;
   margin-top: 3em;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
+
 }
 
-.billedetale  {
-display: block;
-width: 330;
-height: auto;
-margin-bottom: 2em;
-margin-top: 3em;
-margin-left: auto;
-margin-right: auto;
-border-radius: 10px;
+.billedetale {
+  width: 500%;
+  height: auto; 
+  margin-left: auto;
 }
 
 .container-frivillig {
@@ -754,10 +747,6 @@ form button:hover {
 
   .enkelt-billede {
     border-radius: 10px; 
-  }
-
-  .billedramme{
-    margin-bottom: -300px;
   }
 
 /* Billedegaleri SLUT*/
