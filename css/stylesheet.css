@@ -660,7 +660,7 @@ form button:hover {
 
 /* Billedegaleri START*/
 .containerBillede {
-    position: relative;
+  position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -753,6 +753,10 @@ form button:hover {
 
   .enkelt-billede {
     border-radius: 10px; 
+  }
+
+  .billedramme{
+    margin-bottom: -300px;
   }
 
 /* Billedegaleri SLUT*/
