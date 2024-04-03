@@ -343,7 +343,7 @@ z-index: 20;
 .frivilligknap {
     height: 50px;   
     width: 220px;   
-    background-color: red;
+    background-color: ff2c2c;
     border-radius: 10px;    
     display: flex;
     justify-content: center;
@@ -423,14 +423,15 @@ border-radius: 10px;
   padding: 20px 30px;
   text-decoration: none;
   color: white;
-  background-color: #c12d2d;
+  background-color: #ff2c2c;
   border-radius: 8px;
   font-family: "barlow";
   font-size: larger;
+  transition: 0.3s;
 }
 
 .knap:hover {
-  background-color: #6a1313;
+  background-color: #b61f1f;
 }
 
 .knap-container {
