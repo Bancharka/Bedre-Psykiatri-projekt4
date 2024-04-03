@@ -573,7 +573,6 @@ a, .hyperlink-footer {
 
 .contact h2 {
   color: white;
-
 }
 
 
@@ -596,14 +595,13 @@ form .input-box {
 .field .item {
   width: 100%;
   padding: 18px;
-  background: transparent;
-  border: 2px solid #0ef;
-  outline: none;
-  border-radius: 6px;
+  background: white;
+  outline: none;  
+  border-radius: 10px;    
   font-size: 16px;
   color: black;
   margin: 12px 0;
-
+  font-family: "barlow";
 
 }
 
@@ -644,13 +642,13 @@ form button {
   outline: none;
   border-radius: 6px;
   font-size: 16px;
-  color: #333;
+  color: white;
   letter-spacing: 1px;
   font-weight: 600;
   cursor: pointer;
   margin-top: 20px;
   transition: .5s;
-  
+  font-family: "barlow";
 }
 
 form button:hover {
