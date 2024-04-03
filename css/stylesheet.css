@@ -754,10 +754,6 @@ form button:hover {
     border-radius: 10px; 
   }
 
-  .billedramme{
-    margin-bottom: -300px;
-  }
-
 /* Billedegaleri SLUT*/
 
 @media (min-width:640px) {
