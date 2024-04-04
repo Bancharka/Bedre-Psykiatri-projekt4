@@ -536,8 +536,10 @@ a, .hyperlink-footer {
 
 .social-media-icons {
         list-style: none;
-        padding-left: 15px;
         margin: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: 4px;
     }
     
 .social-media-icons li {
@@ -551,10 +553,10 @@ a, .hyperlink-footer {
         border-radius: 50%; 
     }
 
-.formular-section {
-    
+#følgmed{
+  display: flex;
+  justify-content: center;
 }
-
 /* Kontaktformular start */ 
 .contact {
   display: flex;
@@ -806,7 +808,7 @@ form button:hover {
       flex-direction: row;
     }
   
-      .split > * {
+    .split > * {
       flex-basis: 100%;
     }
   
