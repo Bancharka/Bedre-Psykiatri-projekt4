@@ -46,14 +46,6 @@ a:hover {
     cursor: pointer;
 }
 
-.overskrift {
-    color: white; 
-    text-shadow: 
-        -1px -1px 0 rgba(0, 0, 0, 0.5),  
-         1px -1px 0 rgba(0, 0, 0, 0.5),
-        -1px  1px 0 rgba(0, 0, 0, 0.5),
-         1px  1px 0 rgba(0, 0, 0, 0.5); /* Brug en semi-transparent sort farve */
-}
 
 
 /* Navbar */
@@ -250,11 +242,7 @@ nav li a {
 .bannertxt{
     padding-top: 50px; 
     padding-left: 10px;
-    text-shadow: 
-    -1px -1px 0 rgba(0, 0, 0, 0.5),  
-     1px -1px 0 rgba(0, 0, 0, 0.5),
-    -1px  1px 0 rgba(0, 0, 0, 0.5),
-     1px  1px 0 rgba(0, 0, 0, 0.5); 
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .navigation ul {
@@ -362,7 +350,12 @@ z-index: 20;
   padding: 3rem;
   background-color: rgb(146, 192, 202, 0.8);     
   padding-bottom: 80px;
-  
+}
+
+.gørenforskel img {
+  display: flex;
+  position: absolute;
+ 
 }
 
 .gørenforskel h1 {
@@ -684,7 +677,6 @@ form button:hover {
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
-    -webkit-user-select: none;
   }
 
 
@@ -729,7 +721,7 @@ form button:hover {
     float: left;
     width: 33.3%;
     font-family: "barlow";
-    
+    padding: 5px; 
   }
   
 
