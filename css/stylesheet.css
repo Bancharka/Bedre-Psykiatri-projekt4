@@ -719,11 +719,13 @@ form button:hover {
 
   .kolonne {
     float: left;
-    width: 32.48%;
+    width: 32.6%;
     font-family: "barlow";
-    margin: 5px;
+    margin: 3px;
     
   }
+
+
   
 
   .demo {
