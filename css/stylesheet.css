@@ -46,6 +46,14 @@ a:hover {
     cursor: pointer;
 }
 
+.overskrift {
+    color: white; 
+    text-shadow: 
+        -1px -1px 0 rgba(0, 0, 0, 0.5),  
+         1px -1px 0 rgba(0, 0, 0, 0.5),
+        -1px  1px 0 rgba(0, 0, 0, 0.5),
+         1px  1px 0 rgba(0, 0, 0, 0.5); /* Brug en semi-transparent sort farve */
+}
 
 
 /* Navbar */
@@ -242,7 +250,11 @@ nav li a {
 .bannertxt{
     padding-top: 50px; 
     padding-left: 10px;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 
+    -1px -1px 0 rgba(0, 0, 0, 0.5),  
+     1px -1px 0 rgba(0, 0, 0, 0.5),
+    -1px  1px 0 rgba(0, 0, 0, 0.5),
+     1px  1px 0 rgba(0, 0, 0, 0.5); 
 }
 
 .navigation ul {
@@ -350,12 +362,7 @@ z-index: 20;
   padding: 3rem;
   background-color: rgb(146, 192, 202, 0.8);     
   padding-bottom: 80px;
-}
-
-.gørenforskel img {
-  display: flex;
-  position: absolute;
- 
+  
 }
 
 .gørenforskel h1 {
@@ -375,16 +382,15 @@ strong {
 }
 
 .billede {
-  display: block;
+  display: flex;
   width: 300px; 
   height: auto; 
-  margin-bottom: 2em;
-  margin-top: 3em;
+  justify-content: center;
 
 }
 
 .billedetale {
-  width: 500%;
+  width: 50%;
   height: auto; 
   margin-left: auto;
 }
@@ -494,7 +500,6 @@ strong {
 /* footer */
 
 .container-footer {
-    margin: 0 auto;
     width: 100%; 
     padding: 0 100px;
     display: flex; 
@@ -502,6 +507,7 @@ strong {
     align-items: center; 
     background-color: #4B676A;
     font-family: "barlow";
+    margin-top: 26%;
 }
 
 .ikon-grid {
@@ -565,7 +571,7 @@ a, .hyperlink-footer {
 
 
 .contact form {
-  padding: 0 5px 0 5px; 
+  padding: 0 20px 0 20px;
   text-align: center;
   
 }
@@ -649,13 +655,8 @@ form button:hover {
 
 /* Billedegaleri START*/
 .containerBillede {
-  position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 50%;
+  margin: auto;
   }
-
 
   .cursor {
     cursor: pointer;
@@ -677,6 +678,7 @@ form button:hover {
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
+    -webkit-user-select: none;
   }
 
 
@@ -721,7 +723,7 @@ form button:hover {
     float: left;
     width: 33.3%;
     font-family: "barlow";
-    padding: 5px; 
+    
   }
   
 
@@ -741,6 +743,7 @@ form button:hover {
 
   .enkelt-billede {
     border-radius: 10px; 
+    margin-top: 5%;
   }
 
 /* Billedegaleri SLUT*/
@@ -792,7 +795,7 @@ form button:hover {
 
     .containerBillede{
         max-width: 80%;
-        margin-top: 30%;
+        margin-top: 2%;
     }
 
     .split { 
