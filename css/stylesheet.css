@@ -53,8 +53,6 @@ a:hover {
          1px -1px 0 rgba(0, 0, 0, 0.5),
         -1px  1px 0 rgba(0, 0, 0, 0.5),
          1px  1px 0 rgba(0, 0, 0, 0.5); /* Brug en semi-transparent sort farve */
-
-         /* Det her bliver ikke brugt nogle steder, skal det slettes ?= */
 }
 
 
@@ -188,7 +186,7 @@ nav li a {
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    transition:  0.6s ease;
+    transition: background-color 0.6s ease;
     margin-bottom: 1rem;
   }
 
@@ -252,7 +250,11 @@ nav li a {
 .bannertxt{
     padding-top: 50px; 
     padding-left: 10px;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 
+    -1px -1px 0 rgba(0, 0, 0, 0.5),  
+     1px -1px 0 rgba(0, 0, 0, 0.5),
+    -1px  1px 0 rgba(0, 0, 0, 0.5),
+     1px  1px 0 rgba(0, 0, 0, 0.5); 
 }
 
 .navigation ul {
@@ -288,7 +290,7 @@ nav li a {
   background-color: #929393; 
   overflow-x: hidden; 
   padding-top: 60px;
-  transition: 0.5s;   
+  transition: 0.5s; 
 }
 
 .sidenav a {
@@ -341,7 +343,7 @@ z-index: 20;
 .frivilligknap {
     height: 50px;   
     width: 220px;   
-    background-color: #ff2c2c;
+    background-color: ff2c2c;
     border-radius: 10px;    
     display: flex;
     justify-content: center;
@@ -388,9 +390,10 @@ strong {
 }
 
 .billedetale {
-  width: 50%;
+  display: flex;
+  width: 300px; 
   height: auto; 
-  margin-left: auto;
+  justify-content: center;
 }
 
 .container-frivillig {
@@ -668,21 +671,22 @@ form button:hover {
   .næste {
     cursor: pointer;
     position: absolute;
-    display: flex;
-    top: 30%;
+    top: 565%;
     width: auto;
+    margin-top: -22px;
     padding: 16px;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
+    transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
-    
+    user-select: none;
   }
-
 
   .næste {
     right: 0;
     border-radius: 3px 0 0 3px;
+    margin-right: 120px;
   }
   
  
@@ -719,13 +723,10 @@ form button:hover {
 
   .kolonne {
     float: left;
-    width: 32.6%;
+    width: 33.3%;
     font-family: "barlow";
-    margin: 3px;
     
   }
-
-
   
 
   .demo {
@@ -810,5 +811,9 @@ form button:hover {
     .split > * + * {
       margin-left: 3em;
     }
+
+  .billede{
+      margin-top: 25%;
+  }
 
 }
