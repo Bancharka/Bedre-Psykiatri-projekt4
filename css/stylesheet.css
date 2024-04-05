@@ -721,8 +721,9 @@ form button:hover {
 
   .kolonne {
     float: left;
-    width: 33.3%;
+    width: 32.48%;
     font-family: "barlow";
+    margin: 5px;
     
   }
   
