@@ -771,10 +771,14 @@ form button:hover {
     clear: both;
   }
   
+  .række {
+    display: flex;
+    justify-content: space-between;
+  }
 
   .kolonne {
     float: left;
-    width: 33.3%;
+    width: 32.8%; 
     font-family: "barlow";
     
   }
