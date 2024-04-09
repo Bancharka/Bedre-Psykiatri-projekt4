@@ -18,7 +18,7 @@ let menuOptions = [
         sidenav.appendChild(link);
     });
    //åben menu
-    sidenav.style.width = "350px";
+    sidenav.style.width = "210px";
   }
   
   
