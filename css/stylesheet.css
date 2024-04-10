@@ -9,7 +9,7 @@ html {
 
 h1 {
     font-family: "barlow";
-    font-size: 55px;
+    font-size: 35px;  
     color: #353535;
     text-align: center;
     font-weight: 600;
@@ -17,15 +17,15 @@ h1 {
 
 h2 {
     font-family: "barlow";
-    font-size: 36px;
+    font-size: 30px;
     color: #353535;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600; 
 }
 
 h3 {
     font-family: "barlow";
-    font-size: 30px;
+    font-size: 25px;  
     text-align: center;
     color: #353535;
     font-weight: 500;
@@ -68,6 +68,7 @@ header {
     width: 250px; 
     height: auto;
     padding: 20px;
+    display: flex;  
 }
 
 nav {
@@ -246,10 +247,13 @@ nav li a {
 }
 
 .bannertxt{
+    color: white;
     padding-top: 50px; 
     padding-left: 10px;
     text-shadow:5px 5px 8px #000000;
 } 
+
+
 
 .navigation ul {
     display: flex;
@@ -316,7 +320,7 @@ z-index: 20;
 
 #menu-title {
   font-family: 'barlow';
-  font-size: 40px;
+  font-size: 30px;  
   color: #13110e;
   cursor: pointer;
   line-height: 60px;
@@ -346,9 +350,6 @@ z-index: 20;
     margin-top: 5px;
 }
 
-.dots {
-  margin-bottom: 1rem;
-}
 
 /* Om Bedre Psykiatri afsnit */
 .gørenforskel {
@@ -359,9 +360,8 @@ z-index: 20;
   position: relative;
 }
 
-.gørenforskel h1 {
+.gørenforskel h2 {
   color: white;
-  font-size: 30px;  
 }
 
 .tekststykke {
@@ -386,7 +386,7 @@ strong {
 
 
 
-.container-frivillig {
+.container-gørenforskel {
   margin-left:auto; 
   display: flex;
   max-width: 320px;
@@ -396,6 +396,7 @@ strong {
 .split {
   display: flex;
   flex-direction: column;
+  margin-bottom: 80px;
 }
 
 
@@ -437,7 +438,6 @@ strong {
 
 .friviilig h2 {
   font-weight: 600;
-  font-size: 30px;  
   margin-bottom: -30px;
   padding: 1rem 1rem 0 1rem;
   margin-top: 20px;   
@@ -463,11 +463,12 @@ strong {
 .oneliner {
   margin-top: 15px;
   font-weight: 450;
+  max-width: 300px; 
 }
 
 
 .illu {
-    max-height: 300px;
+    max-height: 200px;  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -487,8 +488,8 @@ strong {
     max-width: 320px;
     border-radius: 10px;
     margin-top: 20px;
-    margin-bottom: 90px;
-    display: block;
+    margin-bottom: 50px;
+    display: block; 
     padding: 10px;
 }
 
@@ -503,7 +504,7 @@ strong {
     align-items: center; 
     background-color: #4B676A;
     font-family: "barlow";
-    margin-top: 40px; 
+    margin-top: 50px;  
 }
 
 .ikon-grid {
@@ -557,7 +558,7 @@ a, .hyperlink-footer {
   align-items: center;
   flex-direction: column;
   background-color: rgb(146, 192, 202, 0.8) ;
-  height: 600px;
+  height: 530px;  
   
 }
 
@@ -639,10 +640,10 @@ form button {
   letter-spacing: 1px;
   font-weight: 700;
   cursor: pointer;
-  margin-top: 20px;
   transition: .5s;
   font-family: "barlow";
 }
+
 .friviilig
 form button:hover {
   box-shadow: none;
@@ -657,9 +658,9 @@ form button:hover {
 
 
 .billederammelouise h2 {
-  padding: 1rem 1rem 0 1rem;
-  font-size: 30px;
+  padding: 0 1rem 0 1rem;
   font-weight: 600; 
+  margin-top: 70px;
 }
 
 .louisefrivllig {
@@ -682,6 +683,7 @@ form button:hover {
 
 .billedelouise {
   width: 250px;
+  margin-top: 25px;
 }
 
 /* Louise frivillig slut */
@@ -690,21 +692,23 @@ form button:hover {
 
 
 /* Billedegaleri START*/
-.containerBillede {
+.containerbillede {
   margin: auto;
   position: relative;
-  padding: 1rem;
+  padding: 1rem 1rem 3rem 1rem; 
+  max-width: 900px;
   }
 
   .billedramme {
     margin-top: 4rem; 
+    background-color: rgb(146, 192, 202, 0.8);  
+    height: 80%;
   }
 
   .billedramme h2 {
-    padding: 1rem 1rem 0 1rem;
-    font-size: 30px;
+    padding: 2rem 1rem 1rem 1rem; 
     font-weight: 600;
-
+    color: white;
   }
 
   .cursor {
@@ -760,9 +764,9 @@ form button:hover {
 
   .skrift {
     text-align: center;
-    background-color:rgb(146, 192, 202);
+    background-color:#4b676a;
     padding: 10px 16px;
-    color: rgb(255, 255, 255);
+    color: white; 
     border-radius: 10px;
   }
   
@@ -828,51 +832,122 @@ form button:hover {
   
 @media (min-width: 1001px) {
  
-.burger {
-  display: none;
-}
+  h1 {
+    font-size: 55px;  
+  }
 
+  h2 {
+    font-size: 40px;  
+  }
+
+  header {
+    padding-left: 20px;
+  }
+
+  .button {
+    font-weight: 600;
+    background-color: #698b8e;
+  }
+
+  .overlay {
+    left: 100px;
+    top: 40%;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .container-gørenforskel {
+    max-width: 500px;
+    margin-left: 55%;  
+  }
+
+  .tekststykke {
+    font-size: 25px;
+    margin-top: 3rem;
+  }
+
+  .gørenforskel {
+    text-align: start;
+    padding-bottom: 80px;   
+  }
+
+  .billedefriends {
+    left: 100px;  
+  }
+
+  .knap {
+    background-color: #ff2c2c;
+    color: white;
+    font-family: "barlow";
+    font-size: 25px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 450;
+  }
+
+  .knap-container {
+    text-align: center;
+  }
+
+  .contact form {
+    width: 700px;
+  }
+
+  form button {
+    padding: 15px 80px;
+  }
+
+  .illusektion {
+    display: flex;
+    flex-direction: row;   
+    margin-top: 45px;
+    gap: 20px;     
+  }
+
+  .illukasser {
+    width: 800px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .containerBillede{
+    max-width: 80%;
+  }
+
+  .split { 
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 90px;
+  }
+
+  .louisefrivllig {
+    margin-top: 15px; 
+  }
+
+  .billedelouise {
+    margin-left: 145px; 
+    margin-top: 0px;
+  }
+    
+  .billedramme {
+    height: 845px;
+  }
+    
   .ikon-grid {
     grid-template-columns: repeat(4, 1fr); 
     gap: 5rem;
   }
 
-
-    .illusektion {
-        display: flex;
-        flex-direction: row;   
-        margin-top: 20px;
-        gap: 20px;     
-    }
-
-    .illukasser {
-        width: 800px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .containerBillede{
-        max-width: 80%;
-        margin-top: 2%;
-    }
-
-    .split { 
-      flex-direction: row;
-    }
   
-    .split > * {
-      flex-basis: 100%;
-    }
-  
-    .split > * + * {
-      margin-left: 3em;
-    }
-
-  .billede{
-      margin-top: 25%;
-  }
 
 }
+
+
 
 
 
