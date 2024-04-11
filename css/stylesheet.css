@@ -558,7 +558,7 @@ a, .hyperlink-footer {
   align-items: center;
   flex-direction: column;
   background-color: rgb(146, 192, 202, 0.8) ;
-  height: 530px;  
+  height: 600px;   
   
 }
 
@@ -934,9 +934,6 @@ form button:hover {
     margin-top: 0px;
   }
     
-  .billedramme {
-    height: 845px;
-  }
     
   .ikon-grid {
     grid-template-columns: repeat(4, 1fr); 

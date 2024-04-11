@@ -48,15 +48,15 @@
 
 <!--Billeder--> 
      <div class="mySlides fade">
-        <img src="IMG/header_gruppe_2.png">
+        <img src="IMG/header_gruppe_2.png" alt="Gruppe af mennesker der griner sammen">
         <div class="overlay">
             <h1 class="bannertxt" >Vi har brug for dig</h1> 
-            <a class="bannerknap123" href="#kontaktscroll"><button>Bliv frivillig</button></a>
+            <a class="bannerknap123" href="#kontaktscroll"> <button>Bliv frivillig</button> </a>
         </div>
     </div>
 
     <div class="mySlides fade">
-        <img src="IMG/header_krammer.png">
+        <img src="IMG/header_krammer.png" alt="Glade mennesker der krammer hinanden">
         <div class="overlay">
             <h1 class="bannertxt">Vi har brug for dig</h1>  
             <a class="bannerknap123" href="#kontaktscroll"><button>Bliv frivillig</button></a>
@@ -92,7 +92,7 @@
         
     </section>
     
-    <sektion class="friviilig">
+    <section class="friviilig">
     <h2>Hvordan kan du gøre en forskel?</h2>
     <div class="illusektion">
         <div class="hvadfrivillig"></div>
@@ -118,7 +118,7 @@
             <a href="#"><span class="læsmereknap"><p>Læs mere</p></span></a>
         </div>
     </div>
-</sektion>
+</section>  
 
 <section id="kontaktscroll" class="contact">
     <h2>Tilmeld dig her!</h2>   
@@ -148,7 +148,7 @@
     </div>
     
     <div class="textarea-field field">
-        <textarea name="" id="besked" cols="30" rows="10" placeholder="Hvorfor vil du være en del af teamet?" class="item" autocomplete="off"></textarea>
+        <textarea name="error" id="besked" cols="30" rows="10" placeholder="Hvorfor vil du være en del af teamet?" class="item" autocomplete="off"></textarea>
         <div class="error-txt">Besked kan ikke være blank</div>
     </div>
 
@@ -184,7 +184,7 @@ Frivillig siger -->
     <a class="tidligere" onclick="plusSlides2(-1)">&#10094;</a>
     <a class="næste" onclick="plusSlides2(1)">&#10095;</a>
       <div class="nummertekst">1 / 3</div>
-        <img class="enkelt-billede" src="IMG/foredrag_ny_til_billedgalleri.png" style="width:100%">
+        <img class="enkelt-billede" src="IMG/foredrag_ny_til_billedgalleri.png" style="width:100%" alt="Et foredrag">
     </div>
   
     <div class="billedegalleri">
@@ -192,7 +192,7 @@ Frivillig siger -->
     <a class="tidligere" onclick="plusSlides2(-1)">&#10094;</a>
     <a class="næste" onclick="plusSlides2(1)">&#10095;</a>
       <div class="nummertekst">2 / 3</div>
-        <img class="enkelt-billede" src="IMG/gaatur_til_billedegalleri.jpg" style="width:100%">
+        <img class="enkelt-billede" src="IMG/gaatur_til_billedegalleri.jpg" style="width:100%" alt="To mennesker der går tur">
     </div>
   
     <div class="billedegalleri">
@@ -200,14 +200,10 @@ Frivillig siger -->
     <a class="tidligere" onclick="plusSlides2(-1)">&#10094;</a>
     <a class="næste" onclick="plusSlides2(1)">&#10095;</a>
       <div class="nummertekst">3 / 3</div>
-        <img class="enkelt-billede" src="IMG/Krea_tema_cafe_billedegalleri.jpg" style="width:100%">
+        <img class="enkelt-billede" src="IMG/Krea_tema_cafe_billedegalleri.jpg" style="width:100%" alt="Unge mennesker der er i en tema café">
     </div>
   
-<!--   
-    Tidligere og næste knap
-    <a class="tidligere" onclick="plusSlides2(-1)">&#10094;</a>
-    <a class="næste" onclick="plusSlides2(1)">&#10095;</a> -->
-  
+
     <!-- Billede tekst -->
     <div class="skrift">
       <p id="selveSkriften"></p>
@@ -241,18 +237,18 @@ Frivillig siger -->
             <div class="ikon-item">
                 <h4>Find os</h4>
                 <ul>
-                    <li><a class="hyperlink-footer" href="https://bedrepsykiatri.dk/om/" class="nav li">Viden om os</a></li>
-                    <li><a class="hyperlink-footer" href="https://bedrepsykiatri.dk/lokalafdelinger/" class="nav li">Lokalafdelinger</a></li>
-                    <li><a class="hyperlink-footer" href="https://bpnet.bedrepsykiatri.dk/?password-protected=login&redirect_to=https%3A%2F%2Fbpnet.bedrepsykiatri.dk%2F" class="nav li">Frivilligportalen</a></li>
-                    <li><a class="hyperlink-footer" href="https://bedrepsykiatri.dk/raadgivning/" class="nav li">Vores rådgivning</a></li>
+                    <li><a class="hyperlink-footer" href="https://bedrepsykiatri.dk/om/" >Viden om os</a></li>
+                    <li><a class="hyperlink-footer" href="https://bedrepsykiatri.dk/lokalafdelinger/" >Lokalafdelinger</a></li>
+                    <li><a class="hyperlink-footer" href="https://bpnet.bedrepsykiatri.dk/?password-protected=login&redirect_to=https%3A%2F%2Fbpnet.bedrepsykiatri.dk%2F" >Frivilligportalen</a></li>
+                    <li><a class="hyperlink-footer" href="https://bedrepsykiatri.dk/raadgivning/" >Vores rådgivning</a></li>
                 </ul>
             </div>
         <div class="ikon-item">
             <h4>Støt os</h4>
             <ul>
-                <li><a class="hyperlink-footer" href="https://bedrepsykiatri.dk/stoet/" class="nav li">Støt foreningen</a></li>
-                <li><a class="hyperlink-footer" href="https://bedrepsykiatri.dk/medlem/" class="nav li">Bliv medlem</a></li>
-                <li><a class="hyperlink-footer" href="https://bedrepsykiatri.dk/medlem/bliv-frivillig-lokalt/" class="nav li">Bliv frivillig</a></li>
+                <li><a class="hyperlink-footer" href="https://bedrepsykiatri.dk/stoet/" >Støt foreningen</a></li>
+                <li><a class="hyperlink-footer" href="https://bedrepsykiatri.dk/medlem/" >Bliv medlem</a></li>
+                <li><a class="hyperlink-footer" href="https://bedrepsykiatri.dk/medlem/bliv-frivillig-lokalt/" >Bliv frivillig</a></li>
             </ul>
         </div>
         <div class="ikon-item">
