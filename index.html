@@ -22,12 +22,14 @@
                 <img src="IMG/bp_logo.png" alt="Logo Bedre Psykiatri">
             </a>
         </div>
+
         <nav class="burger">
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             </div>
             <span id="menu-title" onclick="openNav()">&#9776;</span> 
         </nav>
+
         <nav class="nav-menu">
             <ul>
                 <li><a href="https://bedrepsykiatri.dk/hjaelp/">Få hjælp</a></li>
@@ -43,33 +45,34 @@
         </div>
     </header>
     
- <!--Container til min Slideshow-->
+<!-- SLIDESHOW -->
+
     <div class="slideshow-container">
 
-<!--Billeder--> 
-     <div class="mySlides fade">
-        <img src="IMG/header_gruppe_2.png" alt="Gruppe af mennesker der griner sammen">
-        <div class="overlay">
-            <h1 class="bannertxt" >Vi har brug for dig</h1> 
-            <a class="bannerknap123" href="#kontaktscroll">Bliv frivillig</a>
+        <div class="mySlides fade">
+            <img src="IMG/header_gruppe_2.png" alt="Gruppe af mennesker der griner sammen">
+            <div class="overlay">
+                <h1 class="bannertxt" >Vi har brug for dig</h1> 
+                <a class="bannerknap123" href="#kontaktscroll">Bliv frivillig</a>
+            </div>
         </div>
+
+        <div class="mySlides fade">
+            <img src="IMG/header_krammer.png" alt="Glade mennesker der krammer hinanden">
+            <div class="overlay">
+                <h1 class="bannertxt">Vi har brug for dig</h1>  
+                <a class="bannerknap123" href="#kontaktscroll">Bliv frivillig</a>
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
-    <div class="mySlides fade">
-        <img src="IMG/header_krammer.png" alt="Glade mennesker der krammer hinanden">
-        <div class="overlay">
-            <h1 class="bannertxt">Vi har brug for dig</h1>  
-            <a class="bannerknap123" href="#kontaktscroll">Bliv frivillig</a>
-        </div>
-    </div>
-
-<!--Pil knapper-->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
   <br>
 
 <!--Cirkel under billederne-->
+
     <div class="dots" style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span> 
         <span class="dot" onclick="currentSlide(2)"></span>
@@ -86,153 +89,141 @@
                 <div class="knap-container">
                     <a href="#kontaktscroll" class="knap">Bliv frivillig</a>  
                 </div>
-            </div> 
-                       
+            </div>    
         </div>
-        
     </section>
     
     <section class="friviilig">
-    <h2>Hvordan kan du gøre en forskel?</h2>
-    <div class="illusektion">
-        <div class="hvadfrivillig"></div>
-        <div class="illukasser">
-            <h3 class="illuoverskrift">Tema café</h3> 
-            <img class="illu" src="IMG/illlustration_temacafe.png" alt="Billede af unge mennesker spiller brætspil">
-            <div>
-            <p class="oneliner">Vær med til finde på hyggelige temaer og afhold en hyggelig café for unge pårørende en gang om måneden.</p></div>
-            <a href="#scrollbramme"><span class="læsmereknap">Læs mere</span></a>    
-        </div>
-
-        <div class="illukasser">
-            <h3 class="illuoverskrift">Foredrag</h3>    
-            <img class="illu" src="IMG/Foredrag.png" alt="Billede af en person der holder foredrag for en gruppe mennesker">
-            <div><p class="oneliner">Bliv tovholder og stå for organisering af informative og opløftende oplæg for unge pårørende.</p></div>
-            <a href="#scrollbramme"><span class="læsmereknap">Læs mere</span></a>
-        </div>
-
-        <div class="illukasser">
-            <h3 class="illuoverskrift">Gåmakker</h3>
-            <img class="illu" src="IMG/illustration_gaatur.png" alt="Billede af to mennesker der går tur med deres hund">
-            <div> <p class="oneliner">Kom ud og rør dig på en gåtur med en pårørende og skab samtidigt et trygt rum til samtale.</p></div>
-            <a href="#scrollbramme"><span class="læsmereknap">Læs mere</span></a>
-        </div>  
-    </div>
-</section>  
-
-<section id="kontaktscroll" class="contact">
-    <h2>Tilmeld dig her!</h2>   
-
-
-<form  action="#">
-    <div class="input-box">
-        <div class="input-field field">
-            <input type="text" placeholder="Fulde navn" id="navn" class="item" autocomplete="off">
-            <div class="error-txt">Fulde navn kan ikke være blank</div>
-        </div>
-        <div class="input-field field">
-            <input type="text" placeholder="Email" id="email" class="item" autocomplete="off">
-            <div class="error-txt email">Email kan ikke være blank</div>
-        </div>
-    </div>
-
-    <div class="input-box">
-        <div class="input-field field">
-            <input type="text" placeholder="Telefon nr." id="telefon" class="item" autocomplete="off">
-            <div class="error-txt">Telefon nummer kan ikke være blank</div>
-        </div>
-        <div class="input-field field">
-            <input type="text" placeholder="Frivillig område" id="emne" class="item" autocomplete="off">
-            <div class="error-txt">Emne kan ikke være blank</div>   
-        </div>
-    </div>
-    
-    <div class="textarea-field field">
-        <textarea name="error" id="besked" cols="30" rows="10" placeholder="Hvorfor vil du være en del af teamet?" class="item" autocomplete="off"></textarea>
-        <div class="error-txt">Besked kan ikke være blank</div>
-    </div>
-
-    <button type="submit">Send Besked</button>
-
-
-    
-</form>
-</section>
-<!-- 
-Frivillig siger -->
-<section class="billederammelouise">
-    <h2>Det siger Louise om at være at frivillig</h2>
-    <div class="louisefrivllig">
-        <div class="split">
-            <div>
-                <img class="billedetale" src="IMG/quote.png" alt="Udtaelse af Louise der fortælles om, hvordan det er at være frivillig">
+        <h2>Hvordan kan du gøre en forskel?</h2>
+        <div class="illusektion">
+            <div class="hvadfrivillig"></div>
+            <div class="illukasser">
+                <h3 class="illuoverskrift">Tema café</h3> 
+                <img class="illu" src="IMG/illlustration_temacafe.png" alt="Billede af unge mennesker spiller brætspil">
+                <div><p class="oneliner">Vær med til finde på hyggelige temaer og afhold en hyggelig café for unge pårørende en gang om måneden.</p></div>
+                <a href="#scrollbramme"><span class="læsmereknap">Læs mere</span></a>    
             </div>
-            <div>   
-                <img class="billedelouise" src="IMG/ung-fivillig-louise.png" alt="Billede af frivillig Louise">
+
+            <div class="illukasser">
+                <h3 class="illuoverskrift">Foredrag</h3>    
+                <img class="illu" src="IMG/Foredrag.png" alt="Billede af en person der holder foredrag for en gruppe mennesker">
+                <div><p class="oneliner">Bliv tovholder og stå for organisering af informative og opløftende oplæg for unge pårørende.</p></div>
+                <a href="#scrollbramme"><span class="læsmereknap">Læs mere</span></a>
+            </div>
+
+            <div class="illukasser">
+                <h3 class="illuoverskrift">Gåmakker</h3>
+                <img class="illu" src="IMG/illustration_gaatur.png" alt="Billede af to mennesker der går tur med deres hund">
+                <div><p class="oneliner">Kom ud og rør dig på en gåtur med en pårørende og skab samtidigt et trygt rum til samtale.</p></div>
+                <a href="#scrollbramme"><span class="læsmereknap">Læs mere</span></a>
+            </div>  
+        </div>
+    </section>  
+
+    <section id="kontaktscroll" class="contact">
+        <h2>Tilmeld dig her!</h2>   
+
+        <form  action="#">
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Fulde navn" id="navn" class="item" autocomplete="off">
+                    <div class="error-txt">Fulde navn kan ikke være blank</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Email" id="email" class="item" autocomplete="off">
+                    <div class="error-txt email">Email kan ikke være blank</div>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Telefon nr." id="telefon" class="item" autocomplete="off">
+                    <div class="error-txt">Telefon nummer kan ikke være blank</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Frivillig område" id="emne" class="item" autocomplete="off">
+                    <div class="error-txt">Emne kan ikke være blank</div>   
+                </div>
+            </div>
+            
+            <div class="textarea-field field">
+                <textarea name="error" id="besked" cols="30" rows="10" placeholder="Hvorfor vil du være en del af teamet?" class="item" autocomplete="off"></textarea>
+                <div class="error-txt">Besked kan ikke være blank</div>
+            </div>
+
+            <button type="submit">Send Besked</button>
+        </form>
+    </section>
+
+
+<!-- Frivillig siger -->
+
+    <section class="billederammelouise">
+        <h2>Det siger Louise om at være at frivillig</h2>
+        <div class="louisefrivllig">
+            <div class="split">
+                <div>
+                    <img class="billedetale" src="IMG/quote.png" alt="Udtaelse af Louise der fortælles om, hvordan det er at være frivillig">
+                </div>
+                <div>   
+                    <img class="billedelouise" src="IMG/ung-fivillig-louise.png" alt="Billede af frivillig Louise">
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 <!-- Billedegaleri START -->
-<section id="scrollbramme" class="billedramme">
-<h2>Her kan du se eksempler på vores arrangementer</h2>
-<div class="containerbillede">
-    <!-- Billeder i hele brædten med nummertekst -->
-    <div class="billedegalleri">
-          <!-- Tidligere og næste knap -->
-    <a class="tidligere" onclick="plusSlides2(-1)">&#10094;</a>
-    <a class="næste" onclick="plusSlides2(1)">&#10095;</a>
-      <div class="nummertekst">1 / 3</div>
-        <img class="enkelt-billede" src="IMG/foredrag_ny_til_billedgalleri.png" style="width:100%" alt="Et foredrag">
-    </div>
-  
-    <div class="billedegalleri">
-          <!-- Tidligere og næste knap -->
-    <a class="tidligere" onclick="plusSlides2(-1)">&#10094;</a>
-    <a class="næste" onclick="plusSlides2(1)">&#10095;</a>
-      <div class="nummertekst">2 / 3</div>
-        <img class="enkelt-billede" src="IMG/gaatur_til_billedegalleri.jpg" style="width:100%" alt="To mennesker der går tur">
-    </div>
-  
-    <div class="billedegalleri">
-          <!-- Tidligere og næste knap -->
-    <a class="tidligere" onclick="plusSlides2(-1)">&#10094;</a>
-    <a class="næste" onclick="plusSlides2(1)">&#10095;</a>
-      <div class="nummertekst">3 / 3</div>
-        <img class="enkelt-billede" src="IMG/Krea_tema_cafe_billedegalleri.jpg" style="width:100%" alt="Unge mennesker der er i en tema café">
-    </div>
-  
+    <section id="scrollbramme" class="billedramme">
+        <h2>Her kan du se eksempler på vores arrangementer</h2>
+        <div class="containerbillede">
+            <div class="billedegalleri">
+                <a class="tidligere" onclick="plusSlides2(-1)">&#10094;</a>
+                <a class="næste" onclick="plusSlides2(1)">&#10095;</a>
+                <div class="nummertekst">1 / 3</div>
+                <img class="enkelt-billede" src="IMG/foredrag_ny_til_billedgalleri.png" style="width:100%" alt="Et foredrag">
+            </div>
+        
+            <div class="billedegalleri">
+                <a class="tidligere" onclick="plusSlides2(-1)">&#10094;</a>
+                <a class="næste" onclick="plusSlides2(1)">&#10095;</a>
+                <div class="nummertekst">2 / 3</div>
+                <img class="enkelt-billede" src="IMG/gaatur_til_billedegalleri.jpg" style="width:100%" alt="To mennesker der går tur">
+            </div>
+        
+            <div class="billedegalleri">
+                <a class="tidligere" onclick="plusSlides2(-1)">&#10094;</a>
+                <a class="næste" onclick="plusSlides2(1)">&#10095;</a>
+                <div class="nummertekst">3 / 3</div>
+                <img class="enkelt-billede" src="IMG/Krea_tema_cafe_billedegalleri.jpg" style="width:100%" alt="Unge mennesker der er i en tema café">
+            </div>
+        
+            <div class="skrift">
+                <p id="selveSkriften"></p>
+            </div>
+        
+            <div class="række">
+                <div class="kolonne">
+                    <img class="demo cursor" src="IMG/foredrag_ny_til_billedgalleri.png" style="width:100%" onclick="currentSlide(1)" alt="Fordrag: Bedre Psykiatri's lokalafdelinger arrangerer regelmæssigt foredrag om psykisk sygdom og livet som pårørende. Disse foredrag dækker en bred vifte af emner og involverer eksperter, der giver et dybtgående indblik og forståelse for situationen som pårørende til en psykisk syg.">
+                </div>
 
-    <!-- Billede tekst -->
-    <div class="skrift">
-      <p id="selveSkriften"></p>
-    </div>
-  
-    <!-- Billeder -->
-    <div class="række">
-        <div class="kolonne">
-            <img class="demo cursor" src="IMG/foredrag_ny_til_billedgalleri.png" style="width:100%" onclick="currentSlide(1)" alt="Fordrag: Bedre Psykiatri's lokalafdelinger arrangerer regelmæssigt foredrag om psykisk sygdom og livet som pårørende. Disse foredrag dækker en bred vifte af emner og involverer eksperter, der giver et dybtgående indblik og forståelse for situationen som pårørende til en psykisk syg.">
+                <div class="kolonne"> 
+                    <img class="demo cursor" src="IMG/gaatur_til_billedegalleri.jpg" style="width:100%" onclick="currentSlide(2)" alt="Gåtur: Som pårørende til en med en psykisk sygdom eller en udviklingsforstyrrelse er det vigtigt ind i mellem at få sig en pause fra krav og bekymringer og opleve, at man ikke er alene med sine udfordringer. På vores gåture får man dejlige naturoplevelser og også en mulighed for en snak og et fællesskab med de andre unge pårørende.">
+                </div>
+
+                <div class="kolonne">   
+                    <img class="demo cursor" src="IMG/Krea_tema_cafe_billedegalleri.jpg" style="width:100%" onclick="currentSlide(3)" alt="Temacafe: En gang om måneden byder vi på kaffe og en snak med andre pårørende med udvalgt tema, som fx. Krea-tid, brætspil eller madlavning. Vi mødes i et trygt og fortroligt rum, hvor man kan dele sine sorger, glæder og udfordringer med andre unge pårørende i lignende situationer, og samtidig hygge sig med forskellige aktiviteter.">
+                </div>   
+            </div>
         </div>
-
-        <div class="kolonne"> 
-            <img class="demo cursor" src="IMG/gaatur_til_billedegalleri.jpg" style="width:100%" onclick="currentSlide(2)" alt="Gåtur: Som pårørende til en med en psykisk sygdom eller en udviklingsforstyrrelse er det vigtigt ind i mellem at få sig en pause fra krav og bekymringer og opleve, at man ikke er alene med sine udfordringer. På vores gåture får man dejlige naturoplevelser og også en mulighed for en snak og et fællesskab med de andre unge pårørende.">
-        </div>
-
-        <div class="kolonne">   
-            <img class="demo cursor" src="IMG/Krea_tema_cafe_billedegalleri.jpg" style="width:100%" onclick="currentSlide(3)" alt="Temacafe: En gang om måneden byder vi på kaffe og en snak med andre pårørende med udvalgt tema, som fx. Krea-tid, brætspil eller madlavning. Vi mødes i et trygt og fortroligt rum, hvor man kan dele sine sorger, glæder og udfordringer med andre unge pårørende i lignende situationer, og samtidig hygge sig med forskellige aktiviteter.">
-        </div>        
-      
-      
-    </div>
-  </div>
-</section>
+    </section>
 
 <!-- Billedegaleri SLUT -->
 
 
 
-<footer class="container-footer">
+<!-- FOOTER START -->
+
+    <footer class="container-footer">
         <div class="ikon-grid">
             <div class="ikon-item">
                 <h4>Find os</h4>
@@ -243,38 +234,41 @@ Frivillig siger -->
                     <li><a class="hyperlink-footer" href="https://bedrepsykiatri.dk/raadgivning/" >Vores rådgivning</a></li>
                 </ul>
             </div>
-        <div class="ikon-item">
-            <h4>Støt os</h4>
-            <ul>
-                <li><a class="hyperlink-footer" href="https://bedrepsykiatri.dk/stoet/" >Støt foreningen</a></li>
-                <li><a class="hyperlink-footer" href="https://bedrepsykiatri.dk/medlem/" >Bliv medlem</a></li>
-                <li><a class="hyperlink-footer" href="https://bedrepsykiatri.dk/medlem/bliv-frivillig-lokalt/" >Bliv frivillig</a></li>
-            </ul>
-        </div>
-        <div class="ikon-item">
-            <h4>Kontakt os</h4>
+
+            <div class="ikon-item">
+                <h4>Støt os</h4>
+                <ul>
+                    <li><a class="hyperlink-footer" href="https://bedrepsykiatri.dk/stoet/" >Støt foreningen</a></li>
+                    <li><a class="hyperlink-footer" href="https://bedrepsykiatri.dk/medlem/" >Bliv medlem</a></li>
+                    <li><a class="hyperlink-footer" href="https://bedrepsykiatri.dk/medlem/bliv-frivillig-lokalt/" >Bliv frivillig</a></li>
+                </ul>
+            </div>
+
+            <div class="ikon-item">
+                <h4>Kontakt os</h4>
                 <ul>
                     <li><a>Læderstræde 34, 4.</a></li>
                     <li><a>1201 København K</a></li> 
                     <li><a class="hyperlink-footer" href="tel:+4553529900">+45 53 52 99 00</a></li>
                     <li><a class="hyperlink-footer" href="mailto:info@bedrepsykiatri.dk">info@bedrepsykiatri.dk</a></li>
                 </ul>
-        </div>
-        <div class="ikon-item">
+            </div>
+
+            <div class="ikon-item">
                 <h4 id="følgmed">Følg med</h4>
                 <ul class="social-media-icons">
                     <li><a class="hyperlink-footer" href="https://www.facebook.com/BEDRE.PSYKIATRI/"><img src="ikoner/facebook.png" alt="Facebook ikon"></a></li>
                     <li><a class="hyperlink-footer" href="https://www.instagram.com/bedre_psykiatri/"><img src="ikoner/instagram.png" alt="Instagram ikon"></a></li>  
                     <li><a class="hyperlink-footer" href="https://www.linkedin.com/company/bedre-psykiatri/?originalSubdomain=dk"><img src="ikoner/LinkedIn.png" alt="LinkedIn ikon"></a></li>
                 </ul>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
     
 
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="/js/contactform.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/contactform.js"></script>
 </body>
 
 </html>
