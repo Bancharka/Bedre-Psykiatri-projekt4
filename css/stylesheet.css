@@ -112,7 +112,17 @@ nav li a {
 }
 
 .bannerknap123 {
-  padding-left: 10px;
+  display: inline-block;
+  background-color: #ff2c2c;
+  color: white;
+  font-family: "barlow";
+  font-size: 25px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: 450; 
+  width: 151px; 
 }
 
 .button:hover {
@@ -341,7 +351,7 @@ z-index: 20;
 .frivilligknap {
     height: 50px;   
     width: 220px;   
-    background-color: ff2c2c;
+    background-color: #ff2c2c;
     border-radius: 10px;    
     display: flex;
     justify-content: center;
@@ -491,6 +501,7 @@ strong {
     margin-bottom: 50px;
     display: block; 
     padding: 10px;
+    font-family: "barlow";
 }
 
 
@@ -602,9 +613,6 @@ form .input-box {
   border-color: red;
 }
 
-.field .item:placeholder {
-  color: rgba(255, 255, 255, .3);
-}
 
 .field .error-txt {
   font-size: 14px;
