@@ -120,6 +120,7 @@ nav li a {
   transition: background-color 0.3s;
   font-weight: 450; 
   width: 151px; 
+  margin-left: 12px;  
 }
 
 .button:hover {
@@ -291,7 +292,7 @@ nav li a {
   position: fixed;
   z-index: 1;
   top: 0; 
-  right: 0; /* Ændret fra left: 0; */
+  right: 0; 
   background-color: #a7ccd4;  
   overflow-x: hidden; 
   padding-top: 60px;
@@ -359,15 +360,18 @@ nav li a {
 
 
 /* Om Bedre Psykiatri afsnit */
-.gørenforskel {
+.goerenforskel {
   text-align: center;
   padding: 1rem;
   background-color: rgb(146, 192, 202, 0.8);     
-  padding-bottom: 260px;    
+  padding-bottom: 275px;  
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.gørenforskel h2 {
+.goerenforskel h2 {
   color: white;
 }
 
@@ -391,8 +395,7 @@ strong {
 }
 
 
-.container-gørenforskel {
-  margin-left:auto; 
+.container-goerenforskel {
   display: flex;
   max-width: 320px;
   justify-content: flex-end;
@@ -486,7 +489,7 @@ strong {
 }
 
 
-.læsmereknap {
+.laesmereknap {
   background-color: #4B676A;
   height: 40px;
   width: 200px;
@@ -552,7 +555,7 @@ a, .hyperlink-footer {
   border-radius: 50%; 
 }
 
-#følgmed{
+#foelgmed{
   display: flex;
   justify-content: center;
 }
@@ -711,7 +714,7 @@ form button:hover {
 }
 
 .tidligere,
-.næste {
+.naeste {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -727,14 +730,14 @@ form button:hover {
   color:rgb(255, 255, 255);
 }
 
-.næste {
+.naeste {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
   
  
 .tidligere:hover,
-.næste:hover {
+.naeste:hover {
   background-color: #c12d2d;
 }
   
@@ -765,7 +768,7 @@ form button:hover {
   clear: both;
 }
   
-.række {
+.raekke {
   display: flex;
   justify-content: space-between;
 }
@@ -799,11 +802,21 @@ form button:hover {
 
 /* Billedegaleri SLUT*/
 
+@media (min-width:420px) {
+  .billedefriends {
+    left: auto;        
+  }
+
+  .goerenforskel {
+    padding-bottom: 400px;
+  }
+}
+
 @media (min-width:640px) {
   .ikon-grid {
     grid-template-columns: repeat(2, 1fr); 
     max-width: 900px;
-  }
+  }  
 }
 
 
@@ -847,7 +860,7 @@ form button:hover {
     display: none;
   }
 
-  .container-gørenforskel {
+  .container-goerenforskel {
     max-width: 500px;
     margin-left: 55%;  
   }
@@ -857,7 +870,7 @@ form button:hover {
     margin-top: 3rem;
   }
 
-  .gørenforskel {
+  .goerenforskel {
     text-align: start;
     padding-bottom: 80px;   
   }
